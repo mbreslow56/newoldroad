@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
+
     
     <!-- Js -->
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
@@ -31,6 +32,7 @@
     <script src="ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.1.0/velocity.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.1.0/velocity.ui.js"></script>
+<script src="https://fonts.googleapis.com/css?family=Raleway:400,800"></script>
     <!-- Google Map -->
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="js/google-map-init.js"></script>
@@ -84,10 +86,10 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav navbar-right">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="work.html">Work</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="#services"><i class="fa fa-th-list"></i> Services</a></li>
+                    <li><a href="work.html"><i class="fa fa-road"></i>  Work</a></li>
+                    <li><a href="contact.html"><i class="fa fa-envelope-o"></i> Contact</a></li>
                   </ul>
                 </div><!-- /.navbar-collapse -->
               </div><!-- /.container-fluid -->
@@ -103,8 +105,12 @@
         <div class="row">
           <div class="col-md-10 col-md-offset-2">
             <div class="block">
-              <h1 class="animated fadeInUp">WEB &#38; <br> APP DEVELOPEMENT</h1>
-
+              <h2 class="animated fadeInUp"> <!-- <br>WEB &#38; APP DEVELOPEMENT</h1> -->
+<div class="title">
+  <div class="title-word">App</div>
+  <div class="title-word">& Web</div>
+  <div class="title-word">Developement</div>
+</div></h2>
               <p class="animated fadeInUp">
                 Bridging the gap between cutting edge technology <br> and customized techniques.
               </p>
@@ -120,7 +126,7 @@
     <section id="service">
       <div class="container">
         <div class="row">
-          <div class="section-title">
+          <div class="section-title" id="services">
             <h2>Our Services</h2>
             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
           </div>
@@ -143,7 +149,7 @@
           </div>
           <div class="col-sm-6 col-md-3">
             <div class="service-item">
-              <i class="fa fa-globe"></i>
+              <i class="fa fa-laptop"></i>
               <h4>App & Web Development</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
             </div>
@@ -203,7 +209,7 @@
  </p>
           <p>Located between Los Angeles and Tel Aviv, we are easily accessible and willing to meet with you face-to-face or through video to prove that we're not just great at what we do, we're easy to talk to and get along with as well. We can't wait to meet you and hear about your amazing ideas.</p>
         
-          <a href="#" class="btn btn-view-works">View Works</a>
+          <a href="work.html" class="btn btn-view-works">View Works</a>
         </div>
       </div>
     </div>
@@ -228,13 +234,40 @@
           <div class="col-md-5 col-sm-12">
             <div class="block" id="tilt">
               <img src="img/placeit.png" alt="Img">
+            
             </div>
           </div><!-- .col-md-5 close -->
         </div>
       </div>
-    </section>
+  
   
     <!-- Call to action Start -->
+   <h1 class="deepshd" id="team"> OUR TEAM </h1>
+    <div>
+<figure class="snip1091 navy"><img src="img/maynard.jpg" alt="sq-sample6"/>
+  <figcaption>
+    <h2>Maynard  <span>Breslow</span></h2>
+  </figcaption><a href="#"></a>
+</figure>
+<figure class="snip1091 navy"><img src="img/aleksandra.jpg" alt="sq-sample14"/>
+  <figcaption>
+    <h2>Aleksandra   <span>Samsonovitch</span></h2>
+  </figcaption><a href="#"></a>
+</figure>
+<figure class="snip1091 navy"><img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAxiAAAAJDJjNGE4MGRmLTVmYTUtNDc1ZS05MjQ3LWViZWM3OGI4OTRhNQ.jpg" alt="sq-sample10"/>
+  <figcaption>
+    <h2>Arkadi  <span>Zavurov</span></h2>
+  </figcaption><a href="#"></a>
+</figure>
+<figure class="snip1091 navy"><img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAwNAAAAJGI1MzU2NGEzLTc4ODgtNGQxMC1iODRiLWEwNzVmNjA1NTgwYQ.jpg" alt="sq-sample10"/>
+  <figcaption>
+    <h2>Arik  <span>Aviv</span></h2>
+  </figcaption><a href="#"></a>
+</figure>
+
+
+                </div>  </section>
+
     <section id="call-to-action">
       <div class="container">
         <div class="row">
@@ -243,24 +276,27 @@
               <h2>We will be more than happy to steer you in the right direction.</h2>
               <p> 
                      The first step, however, is in YOUR HANDS.</p>
-              <a class="btn btn-default btn-call-to-action" href="#" >GET A QUOTE</a>
+              <a class="btn btn-default btn-call-to-action" href="contact.html" >GET A QUOTE</a>
             </div>
           </div>
         </div>
       </div>
+
     </section>
     <!-- Content Start -->
-    <!-- <section id="testimonial">
+   <!--  <section id="testimonial">
       <div class="container">
         <div class="row">
-          <div class="section-title text-center">
-            <h2>Fun Facts About Us</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-          </div>
+          <div class="section-title text-center"> -->
+            <!-- <h2>Our Team</h2> -->
+          <!--   <h1 class="elegantshd"> OUR TEAM</h1> -->
+
+           <!--  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p> -->
+       <!--    </div>
         </div>
         <div class="row">
-          <div class="col-md-6">
-            <div class="block">
+          <div class="col-md-6"> -->
+            <!-- <div class="block">
               <ul class="counter-box clearfix">
                 <li>
                   <div class="block">
@@ -293,8 +329,8 @@
 
               </ul>
             </div>
-          </div>
-          <div class="col-md-6">
+          </div> -->
+         <!--  <div class="col-md-6">
             <div class="testimonial-carousel">
               <div id="testimonial-slider" class="owl-carousel">
                 <div>
@@ -327,14 +363,17 @@
                     <div class="user">
                       <img src="img/item-img1.jpg" alt="Pepole">
                       <p><span>Rose Ray</span> CEO-Themefisher</p>
-                    </div>
-                </div>
+                    </div> -->
+
+
+
+
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
 
 
 
@@ -351,11 +390,13 @@
           <div class="col-md-12">
             <div class="footer-manu">
               <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact us</a></li>
-                <li><a href="#">How it works</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a href="#">Terms</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#intro">About Us</a></li> 
+                <li><a href="#team">Our Team</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+               
+                
+                
               </ul>
             </div>
             <p>Copyright NewOldRoad&copy; . All rights reserved.</p>
