@@ -1,6 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
 @import url(http://fonts.googleapis.com/css?family=Volkhov:400italic);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
 /* var text-decoration */
 /*--
 	Common Css
@@ -1314,7 +1315,7 @@ h1 {
 
 /*
 portfoliohover*/
-
+/*
 .snip1264 {
   font-family: 'Raleway', Arial, sans-serif;
   color: #fff;
@@ -1421,4 +1422,110 @@ portfoliohover*/
 .snip1264:hover p,
 .snip1264.hover p {
   opacity: 0.7;
+}
+
+*/
+
+.snip1461 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #0000ffff;
+
+  text-align: center;
+  font-size: 16px;
+/*  background-color: #000000;*/
+}
+.snip1461 *,
+.snip1461 *:before,
+.snip1461 *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s linear;
+  transition: all 0.35s linear;
+}
+.snip1461 img {
+  max-width: 100%;
+  backface-visibility: hidden;
+  vertical-align: top;
+}
+.snip1461 figcaption {
+  position: absolute;
+  bottom: 10px;
+  left: 35px;
+  padding: 5px 10px;
+}
+.snip1461 h2 {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.snip1461 h2:before,
+.snip1461 h2:after {
+  height: 10px;
+  width: 200px;
+  position: absolute;
+  content: '';
+  top: 50%;
+  -webkit-transform: scaleX(0) translateY(-50%);
+  transform: scaleX(0) translateY(-50%);
+  -webkit-transform-origin: 0% 0;
+  -ms-transform-origin: 0% 0;
+  transform-origin: 0% 0;
+
+ /* background-color: #ffffff;*/
+}
+.snip1461 h2:before {
+  right: 100%;
+}
+.snip1461 h2:after {
+  left: 100%;
+}
+.snip1461 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.snip1461:hover:after,
+.snip1461.hover:after {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.snip1461:hover img,
+.snip1461.hover img {
+  zoom: 1;
+  filter: alpha(opacity=40);
+  -webkit-opacity: 0.4;
+  opacity: 0.4;
+}
+.snip1461:hover h2,
+.snip1461.hover h2 {
+  color: black;
+}
+.snip1461.hover p {
+  color: black;
+}
+.snip1461:hover h2:before,
+.snip1461.hover h2:before,
+.snip1461:hover h2:after,
+.snip1461.hover h2:after {
+  -webkit-transform: scaleX(1) translateY(-50%);
+  transform: scaleX(1) translateY(-50%);
+}
+.snip1461:hover h2:after,
+.snip1461.hover h2:after {
+  -webkit-transition-delay: 0.45s;
+  transition-delay: 0.45s;
+}
+
+
+.portfoliodisplay {
+  margin-left: 60px;
 }
