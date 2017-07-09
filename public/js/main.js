@@ -1,94 +1,75 @@
-$(document).ready(function(){
+$(document).ready(function() {
+  $("#portfolio-contant-active").mixItUp();
+  $("#testimonial-slider").owlCarousel({
+    paginationSpeed: 500,
+    singleItem: true,
+    autoPlay: 3000,
+  });
 
+  $("#clients-logo").owlCarousel({
+    autoPlay: 3000,
+    items: 5,
+    itemsDesktop: [1199, 5],
+    itemsDesktopSmall: [979, 5],
+  });
 
-	$("#portfolio-contant-active").mixItUp();
+  $("#works-logo").owlCarousel({
+    autoPlay: 3000,
+    items: 5,
+    itemsDesktop: [1199, 5],
+    itemsDesktopSmall: [979, 5],
+  });
 
+  // google map
+  var map;
 
-	$("#testimonial-slider").owlCarousel({
-	    paginationSpeed : 500,      
-	    singleItem:true,
-	    autoPlay: 3000,
-	});
-
-
-
-
-	$("#clients-logo").owlCarousel({
-		autoPlay: 3000,
-		items : 5,
-		itemsDesktop : [1199,5],
-		itemsDesktopSmall : [979,5],
-	});
-
-	$("#works-logo").owlCarousel({
-		autoPlay: 3000,
-		items : 5,
-		itemsDesktop : [1199,5],
-		itemsDesktopSmall : [979,5],
-	});
-
-
-	// google map
-		var map;
-		function initMap() {
-		  map = new google.maps.Map(document.getElementById('map'), {
-		    center: {lat: -34.397, lng: 150.644},
-		    zoom: 8
-		  });
-		}
-
-
-	// Counter
-
-	$('.counter').counterUp({
-        delay: 10,
-        time: 1000
+  function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+      center: {
+        lat: -34.397,
+        lng: 150.644
+      },
+      zoom: 8
     });
-
-
+  }
+  // Counter
+  $('.counter').counterUp({
+    delay: 10,
+    time: 1000
+  });
 });
-
-
-
 /// iphone contact form
-
 $(function() {
-    $('#envoi').on('click', function(){
-        var message_text = $('#message-text').val();
-        if(message_text !== ''){
-            $(".row:last").after('<div class="row"><div class="message message-out pull-right">'+message_text+'</div></div>');
-            $('#message-text').val('');
-        }
-    });
-    
-    
-    $('#validation').on('click', function(){
-        $("#modal-photo").hide();
-        var file = photo.files[0];
-        var reader = new FileReader();
-        reader.onload = function (e) {
-            $(".row:last").after('<div class="row"><img src="'+e.target.result+'" class="message pull-right" alt="photo"/></div></div>');
-        }        
-        reader.readAsDataURL(file);
-        $('#photo').val('');
-    });
+  $('#envoi').on('click', function() {
+    var message_text = $('#message-text').val();
+    if (message_text !== '') {
+      $(".row:last").after('<div class="row"><div class="message message-out pull-right">' + message_text + '</div></div>');
+      $('#message-text').val('');
+    }
+  });
+  $('#validation').on('click', function() {
+    $("#modal-photo").hide();
+    var file = photo.files[0];
+    var reader = new FileReader();
+    reader.onload = function(e) {
+      $(".row:last").after('<div class="row"><img src="' + e.target.result + '" class="message pull-right" alt="photo"/></div></div>');
+    }
+    reader.readAsDataURL(file);
+    $('#photo').val('');
+  });
 });
-
-
 //preloader
-
-$( "#segment_frame" ).prepend( '<div id="preloader"><div class="spinner-sm spinner-sm-1" id="status"> </div></div>' );
-$(window).on('load', function() { // makes sure the whole site is loaded 
-  $('#status').fadeOut(); // will first fade out the loading animation 
-  $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
-  $('body').delay(350).css({'overflow':'visible'});
+$("#segment_frame").prepend('<div id="preloader"><div class="spinner-sm spinner-sm-1" id="status"> </div></div>');
+$(window).on('load', function() { // makes sure the whole site is loaded
+  $('#status').fadeOut(); // will first fade out the loading animation
+  $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+  $('body').delay(350).css({
+    'overflow': 'visible'
+  });
 })
-
 //Shakingimg
-
 (function() {
-  
-var set = function(x, opts) {
+  var set = function(x, opts) {
     var _pt = [{
       x: 0,
       y: 0
@@ -199,7 +180,7 @@ var set = function(x, opts) {
 
 })();
 
-/*to see this same image but with its full background use 
+/*to see this same image but with its full background use
 https://s3-us-west-2.amazonaws.com/s.cdpn.io/131045/noise.jpe | I removed the black image bordering.
 Or add any other image of your choice - just be sure to edit the width/height params below. It *should* work with any image.
 */
@@ -207,6 +188,6 @@ $(function() {
   $("#shakingimg").noisy({
     _w: 360,
     _h: 350,
-    img: "img/placeit.png" 
+    img: "img/placeit.png"
   });
 });
