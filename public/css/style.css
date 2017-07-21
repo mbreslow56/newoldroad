@@ -2,6 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
 @import url(http://fonts.googleapis.com/css?family=Volkhov:400italic);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
 /* var text-decoration */
 /*--
 	Common Css
@@ -127,7 +128,7 @@ font header .navbar-default .navbar-nav li a:hover {
   line-height: 40px;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  letter-spacing: 3px;
+  letter-spacing: 2.5px;
 }
 /*--
 	wrapper Start 
@@ -1540,4 +1541,301 @@ portfoliohover*/
 
 .portfoliodisplay {
   margin-left: 60px;
+}
+
+.wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -86px;
+  margin-left: -89px;
+  text-align: center;
+}
+
+a {
+  -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  -moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  display: block;
+  margin: 20px auto;
+  max-width: 180px;
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 20px 30px;
+}
+
+a.button {
+  color: rgba(30, 22, 54, 0.6);
+  box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;
+}
+
+a.button:hover {
+  color: white;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(255,111,33,0.43);
+-moz-box-shadow: 10px 10px 5px 0px rgba(255,111,33,0.43);
+box-shadow: 10px 10px 5px 0px rgba(255,111,33,0.43);
+}
+
+/*
+new navbar*/
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+ul#navbar1.navbar1 {
+  height: 50px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style-type: none;
+  padding: 0;
+}
+ul#navbar1.navbar1 li.btnx {
+  font-size: 16px;
+  font-weight: semi-bold;
+  text-align: center;
+  background-color: #ffffff;
+  color: #002244;
+  position: relative;
+  z-index: 1;
+  font-family: 'Source Sans Pro', sans-serif;
+  height: 50px;
+}
+ul#navbar1.navbar1 li.btnx.border-right {
+  border-right: 1px solid #7f8c8d;
+}
+ul#navbar1.navbar1 li.btnx a {
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  display: block;
+  outline: none;
+  -webkit-transition: 300ms ease-out 0ms;
+  transition: 300ms ease-out 0ms;
+  height: 50px;
+}
+ul#navbar1.navbar1 li.btnx a span.titlex {
+  display: inline-block;
+  letter-spacing: 2px;
+  width: 100%;
+  vertical-align: middle;
+  line-height: 50px;
+}
+ul#navbar1.navbar1 li.btnx a span.img {
+  display: inline-block;
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+}
+ul#navbar1.navbar1 li.btnx a span.img svg {
+  fill: #FB4F14;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+ul#navbar1.navbar1 li.btnx a .arrow {
+  -webkit-transition: 300ms ease-out 0ms;
+  transition: 300ms ease-out 0ms;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  opacity: 0;
+  /* I don't code the other arrow but you can do it on your own */
+  bottom: 0;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-top: 8px solid #ffffff;
+}
+ul#navbar1.navbar1 li.btnx a:hover {
+  color: #ffffff;
+  cursor: pointer;
+}
+ul#navbar1.navbar1 li.btnx.active,
+ul#navbar1.navbar1 li.btnx a:active,
+ul#navbar1.navbar1 li.btnx a:focus {
+  color: #ffffff;
+}
+ul#navbar1.navbar1 #home1 {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+}
+ul#navbar1.navbar1 #home1 a:hover {
+  background-color: #FB4F14;
+}
+ul#navbar1.navbar1 #home1 a:hover span.img svg {
+  fill: #ffffff;
+}
+ul#navbar1.navbar1 #home1 a:hover .arrow {
+  opacity: 1;
+  /* I don't code the other arrow but you can do it on your own */
+  border-top-color: #FB4F14;
+  bottom: -8px;
+}
+ul#navbar1.navbar1 #home1.active,
+ul#navbar1.navbar1 #home1 a:active,
+ul#navbar1.navbar1 #home1 a:focus {
+  background-color: #002244;
+}
+ul#navbar1.navbar1 #home1.active span.img svg,
+ul#navbar1.navbar1 #home1 a:active span.img svg,
+ul#navbar1.navbar1 #home1 a:focus span.img svg {
+  fill: #ffffff;
+}
+ul#navbar1.navbar1 #home1.active .arrow,
+ul#navbar1.navbar1 #home1 a:active .arrow,
+ul#navbar1.navbar1 #home1 a:focus .arrow {
+  opacity: 1;
+  /* I don't code the other arrow but you can do it on your own */
+  border-top-color: #002244;
+  bottom: -8px;
+}
+ul#navbar1.navbar1 #btnx1 {
+  -webkit-box-flex: 19;
+      -ms-flex: 19;
+          flex: 19;
+}
+ul#navbar1.navbar1 #btn1x a:hover {
+  background-color: #002244;
+}
+ul#navbar1.navbar1 #btn1x a:hover .arrow {
+  opacity: 1;
+  /* I don't code the other arrow but you can do it on your own */
+  border-top-color: #002244;
+  bottom: -8px;
+}
+ul#navbar1.navbar1 #btn1x.active,
+ul#navbar1.navbar1 #btn1x a:active,
+ul#navbar1.navbar1 #btn1x a:focus {
+  background-color: #FB4F14;
+}
+ul#navbar1.navbar1 #btn1x.active .arrow,
+ul#navbar1.navbar1 #btn1x a:active .arrow,
+ul#navbar1.navbar1 #btn1 a:focus .arrow {
+  opacity: 1;
+  /* I don't code the other arrow but you can do it on your own */
+  border-top-color: #FB4F14;
+  bottom: -8px;
+}
+ul#navbar1.navbar1 #btn2x {
+  -webkit-box-flex: 19;
+      -ms-flex: 19;
+          flex: 19;
+}
+ul#navbar1.navbar1 #btn2x a:hover {
+  background-color: #002244;
+}
+ul#navbar1.navbar1 #btn2x a:hover .arrow {
+  opacity: 1;
+  /* I don't code the other arrow but you can do it on your own */
+  border-top-color: #002244;
+  bottom: -8px;
+}
+ul#navbar1.navbar1 #btn2x.active,
+ul#navbar1.navbar1 #btn2x a:active,
+ul#navbar1.navbar1 #btn2x a:focus {
+  background-color: #FB4F14;
+}
+ul#navbar1.navbar1 #btn2x.active .arrow,
+ul#navbar1.navbar2 #btn2x a:active .arrow,
+ul#navbar1.navbar2 #btn2x a:focus .arrow {
+  opacity: 1;
+  /* I don't code the other arrow but you can do it on your own */
+  border-top-color: #FB4F14;
+  bottom: -8px;
+}
+ul#navbar1.navbar1 #btn3x {
+  -webkit-box-flex: 19;
+      -ms-flex: 19;
+          flex: 19;
+}
+ul#navbar1.navbar1 #btn3x a:hover {
+  background-color: #002244;
+}
+ul#navbar1.navbar1 #btn3x a:hover .arrow {
+  opacity: 1;
+  /* I don't code the other arrow but you can do it on your own */
+  border-top-color: #002244;
+  bottom: -8px;
+}
+ul#navbar1.navbar1 #btn3x.active,
+ul#navbar1.navbar1 #btn3x a:active,
+ul#navbar1.navbar1 #btn3x a:focus {
+  background-color: #FB4F14;
+}
+ul#navbar1.navbar1 #btn3x.active .arrow,
+ul#navbar1.navbar1 #btn3x a:active .arrow,
+ul#navbar1.navbar1 #btn3x a:focus .arrow {
+  opacity: 1;
+  /* I don't code the other arrow but you can do it on your own */
+  border-top-color: #FB4F14;
+  bottom: -8px;
+}
+ul#navbar1.navbar1 #btn4 {
+  -webkit-box-flex: 19;
+      -ms-flex: 19;
+          flex: 19;
+}
+ul#navbar1.navbar #btn4 a:hover {
+  background-color: #002244;
+}
+ul#navbar1.navbar #btn4 a:hover .arrow {
+  opacity: 1;
+  /* I don't code the other arrow but you can do it on your own */
+  border-top-color: #002244;
+  bottom: -8px;
+}
+ul#navbar1.navbar #btn4.active,
+ul#navbar1.navbar #btn4 a:active,
+ul#navbar1.navbar #btn4 a:focus {
+  background-color: #FB4F14;
+}
+ul#navbar1.navbar #btn4.active .arrow,
+ul#navbar1.navbar #btn4 a:active .arrow,
+ul#navbar1.navbar #btn4 a:focus .arrow {
+  opacity: 1;
+  /* I don't code the other arrow but you can do it on your own */
+  border-top-color: #FB4F14;
+  bottom: -8px;
+}
+ul#navbar1.navbar #btn5 {
+  -webkit-box-flex: 19;
+      -ms-flex: 19;
+          flex: 19;
+}
+ul#navbar1.navbar #btn5 a:hover {
+  background-color: #002244;
+}
+ul#navbar1.navbar #btn5 a:hover .arrow {
+  opacity: 1;
+  /* I don't code the other arrow but you can do it on your own */
+  border-top-color: #002244;
+  bottom: -8px;
+}
+ul#navbar1.navbar #btn5.active,
+ul#navbar1.navbar #btn5 a:active,
+ul#navbar1.navbar #btn5 a:focus {
+  background-color: #FB4F14;
+}
+ul#navbar1.navbar #btn5.active .arrow,
+ul#navbar1.navbar #btn5 a:active .arrow,
+ul#navbar1.navbar #btn5 a:focus .arrow {
+  opacity: 1;
+  /* I don't code the other arrow but you can do it on your own */
+  border-top-color: #FB4F14;
+  bottom: -8px;
 }

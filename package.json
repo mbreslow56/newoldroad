@@ -1,10 +1,10 @@
 {
   "name": "newoldroad",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
@@ -20,5 +20,15 @@
     "glyphicons": "^0.2.0",
     "jquery": "^2.1.0",
     "mongoose": "^4.11.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbreslow56/newoldroad.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mbreslow56/newoldroad/issues"
+  },
+  "homepage": "https://github.com/mbreslow56/newoldroad#readme",
+  "description": ""
 }
