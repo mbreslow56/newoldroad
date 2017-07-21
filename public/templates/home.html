@@ -18,8 +18,8 @@
               Go from app-less to enterprise. <br>
                We'll walk with you every step of the way.
             </p>
-           
-            <a class="button" href="contact#message">GET A QUOTE</a>
+
+            <a class="button quote_btn normal_a" href="contact#message">GET A QUOTE</a>
           </div>
 
           <!-- block -->
@@ -179,7 +179,7 @@
             <div class="block">
               <h2>Do you have a business or app idea but still don't have an app?</h2>
               <p>The first step is in YOUR HANDS. Let's see if we're a good fit.</p>
-              <a class="btn btn-default btn-call-to-action" href="contact#message">GET A QUOTE</a>
+              <a class="normal_a quote_btn" class="btn btn-default btn-call-to-action" href="contact#message">GET A QUOTE</a>
             </div>
           </div>
         </div>
@@ -267,3 +267,19 @@
                       <img src="img/item-img1.jpg" alt="Pepole">
                       <p><span>Rose Ray</span> CEO-Themefisher</p>
                     </div> -->
+
+                    <script>
+                      $(document).ready(function() {
+                          var s = $("#navbar1");
+                          var pos = s.position();
+                          $(window).scroll(function() {
+                              var windowpos = $(window).scrollTop();
+
+                              if (windowpos >= pos.top) {
+                                  s.addClass("stick");
+                              } else {
+                                  s.removeClass("stick");
+                              }
+                          });
+                      });
+                    </script>
