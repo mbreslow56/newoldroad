@@ -1459,9 +1459,7 @@ portfoliohover*/
 
 */
 
-
-
-.snip1461 {
+.snip1461 { /* NOTE: for home page */
   /*font-family: 'Montserrat', Arial, sans-serif;*/
   position: absolute;
   /*float: left;*/
@@ -1477,6 +1475,23 @@ portfoliohover*/
   font-size: 16px;*/
 /*  background-color: #000000;*/
 }
+
+.snip1462 { /* NOTE: for case-studies page */
+  font-family: 'Montserrat', Arial, sans-serif;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #0000ffff;
+
+  text-align: center;
+  font-size: 16px;
+/*  background-color: #000000;*/
+}
+
 .snip1461 *,
 .snip1461 *:before,
 .snip1461 *:after {
