@@ -134,7 +134,7 @@ font header .navbar-default .navbar-nav li a:hover {
 	wrapper Start
 --*/
 #intro {
-  padding: 100px 0;
+  padding: 70px 0;
 }
 #intro .block h2 {
   padding-top: 35px;
@@ -147,7 +147,7 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 #intro .block img {
   /*padding-left: 40px;*/
-  width: 130%;
+  /*width: 130%;*/
 }
 #intro .section-title {
   margin-bottom: 0px;
@@ -160,7 +160,7 @@ font header .navbar-default .navbar-nav li a:hover {
 --*/
 #service {
   text-align: center;
-  padding: 90px 0;
+  padding: 70px 0;
 }
 #service .service-item {
   padding-bottom: 30px;
@@ -228,26 +228,43 @@ font header .navbar-default .navbar-nav li a:hover {
 	Feature Start
 --*/
 #feature {
+  background: #F2F2F2;
+}
+#feature-wrapper {
   background: url("../img/featue-bg.jpg");
-  background-position: 50% 94px !important;
+  background-position: 10% 94px !important;
+  background-size: 80% 80%;
   width: 100%;
   display: block;
   position: relative;
   overflow: visible;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: center center !important;
-  background-color: #fff;
-  -webkit-background-size: cover;
+  /*background-color: #fff;*/
+  /*-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover;*/
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   padding: 100px 0;
+}
+@media (max-width: 768px) { /* when the screen is AT MAX the size of a tablet (992px and below): remove paralex effect */
+  body {
+    text-align: center;
+  }
+  .container {
+    margin: 15px;
+  }
+  #feature-wrapper {
+    background: none;
+  }
+  .company_img {
+    display: none;
+  }
 }
 #feature h2 {
   font-size: 28px;
@@ -867,7 +884,6 @@ Contact form custom iphone */
     font-weight: bold;
 }
 
-
 .message{
     font-size: 1.2em;
     width: auto;
@@ -1439,19 +1455,22 @@ portfoliohover*/
 
 */
 
-.snip1461 {
-  font-family: 'Montserrat', Arial, sans-serif;
-  position: relative;
-  float: left;
-  overflow: hidden;
-  margin: 10px 1%;
-  min-width: 230px;
-  max-width: 315px;
-  width: 100%;
-  color: #0000ffff;
 
-  text-align: center;
-  font-size: 16px;
+
+.snip1461 {
+  /*font-family: 'Montserrat', Arial, sans-serif;*/
+  position: absolute;
+  /*float: left;*/
+  overflow: hidden;
+  /*margin: 10px 1%;*/
+  /*margin: auto;*/
+  padding-top: 70px;
+  min-width: 230px;
+  max-width: 270px;
+  width: 100%;
+  /*color: #0000ffff;*/
+  /*text-align: center;
+  font-size: 16px;*/
 /*  background-color: #000000;*/
 }
 .snip1461 *,
@@ -1462,6 +1481,11 @@ portfoliohover*/
   -webkit-transition: all 0.35s linear;
   transition: all 0.35s linear;
 }
+
+/*@media (max-width: 768px) { /* when the screen is AT MAX the size of a tablet (992px and below): remove paralex effect */*/
+  /*.snip1461 {
+    max-width: 230px;
+  }*/
 .snip1461 img {
   max-width: 100%;
   backface-visibility: hidden;
