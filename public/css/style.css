@@ -49,6 +49,7 @@ a:active {
   text-transform: uppercase;
   font-size: 28px;
   font-weight: 600;
+  color: #002245;
 }
 .section-title p {
   font-family: 'Volkhov', serif;
@@ -167,7 +168,7 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 #service .service-item i {
   font-size: 60px;
-  color: #4A4656;
+  color: #fb4f14;
 }
 #service .service-item h4 {
   padding-top: 20px;
@@ -253,13 +254,14 @@ font header .navbar-default .navbar-nav li a:hover {
   font-size: 28px;
   font-weight: 600;
   margin-bottom: 30px;
+  color: #002245;
 }
 #feature p {
   color: #8d8f92;
   margin-bottom: 20px;
 }
 #feature .btn-view-works {
-  background: #655E7A;
+  background: #fb4f14;
   color: #fff;
   padding: 10px 70px;
   margin: 5px;
@@ -806,7 +808,9 @@ footer .footer-manu ul li a:hover {
 }
 
 .logo {
-  max-width: 330px;
+  max-height: 50px;
+  padding: 5px;
+
 }
 
 
@@ -914,7 +918,7 @@ Contact form custom iphone */
   height: 30px;
   width: 4px;
   margin-left:2px;
-  background-color:rgba(0,0,255,1);
+  background-color: #fb4f14;
   animation: seg21_1 2s ease-in .1s infinite alternate;
 }
 @keyframes seg21_1{
@@ -928,7 +932,7 @@ Contact form custom iphone */
   height: 30px;
   width: 4px;
   margin-left:2px;
-  background-color:rgba(0,0,255,1);
+  background-color: #fb4f14;
   animation: seg21_1 2s  ease-in .2s infinite alternate;
 }
 #segment21_3{
@@ -936,7 +940,7 @@ Contact form custom iphone */
   height: 30px;
   width: 4px;
   margin-left:2px;
-  background-color:rgba(0,0,255,1);
+  background-color: #fb4f14;
   animation: seg21_1 2s ease-in .3s infinite alternate ;
 }
 #segment21_4{
@@ -944,7 +948,7 @@ Contact form custom iphone */
   height: 30px;
   width: 4px;
   margin-left:2px;
-  background-color:rgba(0,0,255,1);
+  background-color: #fb4f14;
   animation: seg21_1 2s ease-in .4s infinite alternate;
 }
 #segment21_5{
@@ -952,7 +956,7 @@ Contact form custom iphone */
   height: 30px;
   width: 4px;
   margin-left:2px;
-  background-color:rgba(0,0,255,1);
+  background-color: #fb4f14;
   animation: seg21_1 2s ease-in .5s infinite alternate;
 }
 #segment21_6{
@@ -960,7 +964,7 @@ Contact form custom iphone */
   height: 30px;
   width: 4px;
   margin-left:2px;
-  background-color:rgba(0,0,255,1);
+  background-color: #fb4f14;
   animation: seg21_1 2s ease-in .6s infinite alternate;
 }
 #segment21_7{
@@ -968,7 +972,7 @@ Contact form custom iphone */
   height: 30px;
   width: 4px;
   margin-left:2px;
-  background-color:rgba(0,0,255,1);
+  background-color: #fb4f14;
   animation: seg21_1 2s ease-in .7s infinite alternate;
 }
 #segment21_8{
@@ -976,7 +980,7 @@ Contact form custom iphone */
   height: 30px;
   width: 4px;
   margin-left:2px;
-  background-color:rgba(0,0,255,1);
+  background-color: #fb4f14;
   animation: seg21_1 2s ease-in .8s infinite alternate;
 }
 #segment21_9{
@@ -984,7 +988,7 @@ Contact form custom iphone */
   height: 30px;
   width: 4px;
   margin-left:2px;
-  background-color:rgba(0,0,255,1);
+  background-color: #fb4f14;
   animation: seg21_1 2s ease-in .9s infinite alternate;
 }
 #segment21_10{
@@ -992,7 +996,7 @@ Contact form custom iphone */
   height: 30px;
   width: 4px;
   margin-left:2px;
-  background-color:rgba(0,0,255,1);
+  background-color: #fb4f14;
   animation: seg21_1 2s ease-in 1s infinite alternate;
 }
 
@@ -1681,7 +1685,7 @@ ul#navbar1.navbar #home {
           flex: 5;
 }
 ul#navbar1.navbar #home a:hover {
-  background-color: #FB4F14;
+  background-color: #FFF;
 }
 ul#navbar1.navbar #home a:hover span.img svg {
   fill: #ffffff;
