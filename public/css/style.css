@@ -229,14 +229,14 @@ font header .navbar-default .navbar-nav li a:hover {
 --*/
 #feature {
   background: url("../img/featue-bg.jpg");
-  background-position: 50% 94px;
+  background-position: 50% 94px !important;
   width: 100%;
   display: block;
   position: relative;
   overflow: visible;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center center !important;
   background-color: #fff;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1597,6 +1597,8 @@ ul#navbar1.navbar {
       -ms-flex-direction: row;
           flex-direction: row;
   list-style-type: none;
+  position: fixed;
+  z-index: 1;
 }
 ul#navbar1.navbar li.btn_nav {
   font-size: 16px;
@@ -1844,8 +1846,8 @@ ul#navbar1.navbar #btn5 a:focus .arrow {
   bottom: -8px;
 }
 
-/*.stick {
-position:fixed;
-top:0px;
-z-index:999;
-}*/
+@media (min-width: 992px) {
+  .col-md-3 {
+      width: 24%;
+  }
+}
