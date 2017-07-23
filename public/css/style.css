@@ -1610,15 +1610,15 @@ a.normal_a {
 }
 
 a.quote_btn {
-  color: rgba(30, 22, 54, 0.6);
-  box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;
+  color: white;
+  box-shadow: white 0 0px 0px 2px inset;
 }
 
 a.quote_btn:hover {
   color: white;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(255,111,33,0.43);
 -moz-box-shadow: 10px 10px 5px 0px rgba(255,111,33,0.43);
-box-shadow: 10px 10px 5px 0px rgba(255,111,33,0.43);
+box-shadow: 10px 10px 5px 0px #fb4f14;
 }
 
 /*
@@ -1648,16 +1648,16 @@ ul#navbar1.navbar li.btn_nav {
   font-weight: semi-bold;
   text-align: center;
   background-color: #ffffff;
-  color: #002244;
+  color: #002245;
   position: relative;
   z-index: 1;
   font-family: 'Source Sans Pro', sans-serif;
   height: 50px;
   background: #B14E2D;
-  opacity: 0.8;
+  opacity: 0.95;
 }
 ul#navbar1.navbar li.btn_nav.border-right {
-  border-right: 1px solid #7f8c8d;
+  border-right: 1px solid #002245;
 }
 ul#navbar1.navbar li.btn_nav a {
   text-decoration: none;
