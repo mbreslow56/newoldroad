@@ -50,7 +50,9 @@ a:active {
   text-transform: uppercase;
   font-size: 50px;
   font-weight: 600;
+
   color: #002244;
+
 }
 .section-title p {
   font-family: 'Volkhov', serif;
@@ -245,9 +247,11 @@ font header .navbar-default .navbar-nav li a:hover {
   background: #F2F2F2;
 }
 #feature-wrapper {
+
   background: url("../img/keyboard.jpeg");
   background-position: 10% 94px !important;
   background-size: 100% 100%;
+
   width: 100%;
   display: block;
   position: relative;
@@ -281,10 +285,12 @@ font header .navbar-default .navbar-nav li a:hover {
   }
 }
 #feature h2 {
+
  font-size: 38px;
     font-weight: 900;
     margin-bottom: 30px;
     color: #FB4F14;
+
 }
 #feature p {
   color: #8d8f92;
@@ -960,7 +966,9 @@ Contact form custom iphone */
   height: 30px;
   width: 4px;
   margin-left:2px;
+
   background-color: #002244;
+
   animation: seg21_1 2s ease-in .1s infinite alternate;
 }
 @keyframes seg21_1{
@@ -982,7 +990,9 @@ Contact form custom iphone */
   height: 30px;
   width: 4px;
   margin-left:2px;
+
   background-color: #002244;
+
   animation: seg21_1 2s ease-in .3s infinite alternate ;
 }
 #segment21_4{
@@ -998,7 +1008,9 @@ Contact form custom iphone */
   height: 30px;
   width: 4px;
   margin-left:2px;
+
   background-color: #002244;
+
   animation: seg21_1 2s ease-in .5s infinite alternate;
 }
 #segment21_6{
@@ -1014,7 +1026,9 @@ Contact form custom iphone */
   height: 30px;
   width: 4px;
   margin-left:2px;
+
   background-color: #002244;
+
   animation: seg21_1 2s ease-in .7s infinite alternate;
 }
 #segment21_8{
@@ -1030,7 +1044,9 @@ Contact form custom iphone */
   height: 30px;
   width: 4px;
   margin-left:2px;
+
   background-color: #002244;
+
   animation: seg21_1 2s ease-in .9s infinite alternate;
 }
 #segment21_10{
@@ -1391,6 +1407,7 @@ h1 {
 /*  background-color: #000000;*/
 }
 
+
 .snip1462 { /* NOTE: for case-studies page */
   font-family: 'Montserrat', Arial, sans-serif;
   position: relative;
@@ -1572,7 +1589,9 @@ ul#navbar1.navbar li.btn_nav {
   opacity: 0.8;
 }
 ul#navbar1.navbar li.btn_nav.border-right {
+
 /*  border-right: 1px solid #7f8c8d;*/
+
 }
 ul#navbar1.navbar li.btn_nav a {
   text-decoration: none;
@@ -1599,7 +1618,9 @@ ul#navbar1.navbar li.btn_nav a span.img {
   line-height: 50px;
 }
 ul#navbar1.navbar li.btn_nav a span.img svg {
+
   fill: #002244;
+
   width: 32px;
   height: 32px;
   position: absolute;
@@ -1625,13 +1646,17 @@ ul#navbar1.navbar li.btn_nav a .arrow {
   border-top: 8px solid #ffffff;
 }
 ul#navbar1.navbar li.btn_nav a:hover {
+
   color:  #FB4F14;
+
   cursor: pointer;
 }
 ul#navbar1.navbar li.btn_nav.active,
 ul#navbar1.navbar li.btn_nav a:active,
 ul#navbar1.navbar li.btn_nav a:focus {
+
   color:  #002244;
+
 }
 ul#navbar1.navbar #home {
   -webkit-box-flex: 5;
@@ -1639,10 +1664,12 @@ ul#navbar1.navbar #home {
           flex: 5;
 }
 ul#navbar1.navbar #home a:hover {
+
   background-color: #002244;
 }
 ul#navbar1.navbar #home a:hover span.img svg {
   fill:  #FB4F14;
+
 }
 ul#navbar1.navbar #home a:hover .arrow {
   opacity: 1;
@@ -1658,7 +1685,9 @@ ul#navbar1.navbar #home a:focus {
 ul#navbar1.navbar #home.active span.img svg,
 ul#navbar1.navbar #home a:active span.img svg,
 ul#navbar1.navbar #home a:focus span.img svg {
+
   fill: #FB4F14;
+
 }
 ul#navbar1.navbar #home.active .arrow,
 ul#navbar1.navbar #home a:active .arrow,
@@ -1840,6 +1869,7 @@ background:  #002244;
       width: 24%;
   }
 
+
 }
 
 
@@ -1884,6 +1914,7 @@ i {
   margin-top: -10px;
   text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
   transform: translate(0, -8);
+
 }
 
 .socialicondiv i:nth-child(3) {
