@@ -19,4 +19,8 @@ app.config(function($locationProvider, $stateProvider, $urlRouterProvider) {
       url: '/work',
       templateUrl: 'templates/work.html'
     })
+    .state('thanks', {
+      url: '/thanks',
+      templateUrl: 'templates/thanks.html'
+    })
 });
