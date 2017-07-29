@@ -243,14 +243,14 @@ font header .navbar-default .navbar-nav li a:hover {
 /*--
 	Feature Start
 --*/
-#feature {
+/*#feature {
   background: #F2F2F2;
-}
+}*/
 #feature-wrapper {
 
   background: url("../img/keyboard.jpeg");
   background-position: 10% 94px !important;
-  background-size: 100% 100%;
+  background-size: 65% 65%;
 
   width: 100%;
   display: block;
@@ -306,7 +306,7 @@ font header .navbar-default .navbar-nav li a:hover {
 #feature .btn-view-works:hover {
   background: #002244;
   color: #fff;
- 
+
 }
 /*--
 	content Start
@@ -731,7 +731,7 @@ font header .navbar-default .navbar-nav li a:hover {
   background: #f14f14;
   border: none;
   color: #002244;
-  
+
 }
 /*--
 	wrapper-contact Start
@@ -1433,7 +1433,7 @@ h1 {
   transition: all 0.35s linear;
 }
 
-/*@media (max-width: 768px) { /* when the screen is AT MAX the size of a tablet (992px and below): remove paralex effect */*/
+/*@media (max-width: 768px) { /* when the screen is AT MAX the size of a tablet (992px and below): remove paralex effect */
   /*.snip1461 {
     max-width: 230px;
   }*/
@@ -1515,7 +1515,7 @@ h1 {
 
 
 .portfoliodisplay {
-  margin-left: 60px;
+  margin-left: 20px;
 }
 
 .wrap {
@@ -1575,6 +1575,37 @@ ul#navbar1.navbar {
   position: fixed;
   z-index: 1;
 }
+
+@media (min-width: 769px) {
+  .hamburger_menu_icon {
+    display: none;
+  }
+}
+@media (min-width: 769px) {
+  #home_mobile {
+    display: none !important;
+  }
+}
+@media (max-width: 768px) {
+  ul#navbar1.navbar {
+    margin-left: 5%;
+    width: 45%;
+    display: inline-block;
+  }
+  #home_desktop {
+    display: none !important;
+  }
+  #home_mobile {
+    display: visible;
+  }
+  .home_img {
+    display: none !important;
+  }
+  .hamburger_menu_icon {
+    width: 40px;
+  }
+}
+
 ul#navbar1.navbar li.btn_nav {
   font-size: 16px;
   font-weight: semi-bold;
@@ -1845,33 +1876,29 @@ a.getquotebtn {
   -o-transition: all 500ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
   transition: all 500ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
   display: block;
- 
+
   max-width: 180px;
   text-decoration: none;
   border-radius: 4px;
-  padding: 20px 42px; 
+  padding: 20px 42px;
   color: rgba(30, 22, 54, 0.6);
   box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;
- 
+
 }
 
 #first {
- 
   margin: 20px auto;
-  
 }
 a.getquotebtn:hover {
   color: rgba(255, 255, 255, 0.85);
-background:  #002244;
+  background:  #002244;
+}
 
 @media (min-width: 992px) {
   .col-md-3 {
       width: 24%;
   }
-
-
 }
-
 
 .mydiv {
   margin-left: 200px;
@@ -1940,5 +1967,3 @@ i {
   text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
   transform: translate(0, -8);
 }
-
-

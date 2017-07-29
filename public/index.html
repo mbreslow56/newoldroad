@@ -44,6 +44,8 @@
  -->
   <nav-directive></nav-directive>
 
+
+
   <div ui-view></div>
   <footer-directive></footer-directive>
   <!-- ################## JS #################### -->
@@ -74,6 +76,15 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.1.0/velocity.ui.js"></script>
   <script src="https://cdn.rawgit.com/download/glyphicons/0.1.0/glyphicons.js"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+
+  <script>
+    $(".hamburger_menu_mobile").click(function(){
+      alert("hi");
+      $("#btn1").toggle();
+      $("#btn2").toggle();
+      $("#btn3").toggle();
+    });
+  </script>
+
 </body>
 </html>
-
