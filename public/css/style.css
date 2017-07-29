@@ -1576,6 +1576,11 @@ ul#navbar1.navbar {
   z-index: 1;
 }
 
+.home_img {
+  width: 100%;
+  height: 100%;
+}
+
 @media (min-width: 769px) {
   .hamburger_menu_icon {
     display: none;
@@ -1690,9 +1695,9 @@ ul#navbar1.navbar li.btn_nav a:focus {
 
 }
 ul#navbar1.navbar #home {
-  -webkit-box-flex: 5;
-      -ms-flex: 5;
-          flex: 5;
+  -webkit-box-flex: 12;
+      -ms-flex: 12;
+          flex: 12;
 }
 ul#navbar1.navbar #home a:hover {
 
