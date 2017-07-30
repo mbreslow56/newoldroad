@@ -1585,6 +1585,9 @@ ul#navbar1.navbar {
   .hamburger_menu_icon {
     display: none;
   }
+  ul#navbar1.navbar #home {
+    width: 55px;
+  }
 }
 @media (min-width: 769px) {
   #home_mobile {
@@ -1593,9 +1596,15 @@ ul#navbar1.navbar {
 }
 @media (max-width: 768px) {
   ul#navbar1.navbar {
-    margin-left: 5%;
-    width: 45%;
+    margin-left: -50%;
+    width: 100%;
+
     display: inline-block;
+  }
+  ul#navbar1.navbar #home {
+    -webkit-box-flex: 4;
+        -ms-flex: 4;
+            flex: 4;
   }
   #home_desktop {
     display: none !important;
@@ -1608,7 +1617,25 @@ ul#navbar1.navbar {
   }
   .hamburger_menu_icon {
     width: 40px;
+    margin-left: 50%;
   }
+  .logo_menu_icon {
+    width: 150px;
+    /*margin-right: 50%;*/
+  }
+  .arrow {
+    display: none;
+  }
+}
+
+.mobile_logo_div {
+  float: left;
+  display: inline-block;
+  margin-left: 32%;
+}
+
+.mobile_hamburger_div {
+  float: left;
 }
 
 ul#navbar1.navbar li.btn_nav {
@@ -1694,11 +1721,7 @@ ul#navbar1.navbar li.btn_nav a:focus {
   color:  #002244;
 
 }
-ul#navbar1.navbar #home {
-  -webkit-box-flex: 12;
-      -ms-flex: 12;
-          flex: 12;
-}
+
 ul#navbar1.navbar #home a:hover {
 
   background-color: #002244;
@@ -1737,6 +1760,7 @@ ul#navbar1.navbar #btn1 {
   -webkit-box-flex: 19;
       -ms-flex: 19;
           flex: 19;
+  width: 45%
 }
 ul#navbar1.navbar #btn1 a:hover {
   background-color: #002244;
@@ -1764,6 +1788,7 @@ ul#navbar1.navbar #btn2 {
   -webkit-box-flex: 19;
       -ms-flex: 19;
           flex: 19;
+  width: 45%;
 }
 ul#navbar1.navbar #btn2 a:hover {
   background-color: #002244;
@@ -1791,6 +1816,7 @@ ul#navbar1.navbar #btn3 {
   -webkit-box-flex: 19;
       -ms-flex: 19;
           flex: 19;
+  width: 45%;
 }
 ul#navbar1.navbar #btn3 a:hover {
   background-color: #002244;
