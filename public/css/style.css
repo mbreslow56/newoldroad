@@ -1560,7 +1560,7 @@ new navbar*/
 
 ul#navbar1.navbar {
   height: 50px;
-  width: 100%;
+  width: 105%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
@@ -1586,7 +1586,7 @@ ul#navbar1.navbar {
     display: none;
   }
   ul#navbar1.navbar #home {
-    width: 55px;
+    width: 350px;
   }
 }
 @media (min-width: 769px) {
@@ -1676,8 +1676,9 @@ ul#navbar1.navbar li.btn_nav a span.title_nav {
 }
 ul#navbar1.navbar li.btn_nav a span.img {
   display: inline-block;
-  height: 50px;
-  width: 100%;
+  margin-left: 2px;
+  height: 45px;
+  width: 99%;
   line-height: 50px;
 }
 ul#navbar1.navbar li.btn_nav a span.img svg {
