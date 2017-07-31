@@ -1596,9 +1596,8 @@ ul#navbar1.navbar {
 }
 @media (max-width: 768px) {
   ul#navbar1.navbar {
-    margin-left: -50%;
-    width: 100%;
-
+    margin-left: -51%;
+    width: 102%;
     display: inline-block;
   }
   ul#navbar1.navbar #home {
@@ -1621,6 +1620,7 @@ ul#navbar1.navbar {
   }
   .logo_menu_icon {
     width: 150px;
+    float: left;
     /*margin-right: 50%;*/
   }
   .arrow {
@@ -1629,9 +1629,9 @@ ul#navbar1.navbar {
 }
 
 .mobile_logo_div {
-  float: left;
+  float: block;
   display: inline-block;
-  margin-left: 32%;
+  margin-right: 10%;
 }
 
 .mobile_hamburger_div {
