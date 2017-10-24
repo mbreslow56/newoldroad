@@ -1656,7 +1656,7 @@ ul#navbar1.navbar li.btn_nav {
   font-family: 'Source Sans Pro', sans-serif;
   height: 50px;
   background: #002244;
-  opacity: 0.8;
+  opacity: 1.0;
 }
 ul#navbar1.navbar li.btn_nav.border-right {
 
