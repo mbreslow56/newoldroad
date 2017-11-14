@@ -37,10 +37,7 @@ ul {
   margin: 0;
   list-style: none;
 }
-a,
-a:active,
-a:focus,
-a:active {
+a, a:active, a:focus, a:active {
   text-decoration: none !important;
 }
 .section-title {
@@ -50,7 +47,6 @@ a:active {
   text-transform: uppercase;
   font-size: 50px;
   font-weight: 600;
-
   color: #002244;
 
 }
@@ -100,11 +96,11 @@ font header .navbar-default .navbar-nav li a:hover {
 	Slider Start
 --*/
 #slider {
-  background: url("../img/slider-bg.jpg") no-repeat;
+  background: url("../img/santa-monica.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: 10% 0%;
-  padding: 200px 0 280px 0;
+  padding: 150px 0 280px 0;
   position: relative;
 }
 #slider:before {
@@ -199,7 +195,7 @@ font header .navbar-default .navbar-nav li a:hover {
 	call-to-action Start
 --*/
 #call-to-action {
-  background: url("../img/call-to-action-bg.jpg") no-repeat;
+  background: url("../img/hollywood.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
   padding: 70px 0px;
@@ -249,8 +245,8 @@ font header .navbar-default .navbar-nav li a:hover {
 #feature-wrapper {
 
   background: url("../img/keyboard.jpeg");
-  background-position: 10% 94px !important;
-  background-size: 65% 65%;
+  background-position: 0% 51px !important;
+  background-size: 75% 75%;
 
   width: 100%;
   display: block;
@@ -268,7 +264,7 @@ font header .navbar-default .navbar-nav li a:hover {
   box-sizing: border-box;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  padding: 100px 0;
+  padding: 10px 0;
 }
 @media (max-width: 768px) { /* when the screen is AT MAX the size of a tablet (992px and below): remove paralex effect */
   body {
@@ -890,7 +886,6 @@ Contact form custom iphone */
 .icon{
     height: 70px;
     padding-top:23px;
-
 }
 #contact{
     width: 50px;
