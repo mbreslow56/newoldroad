@@ -145,8 +145,9 @@ font header .navbar-default .navbar-nav li a:hover {
   margin: 0;
 }
 #intro .block p {
-  color: #7B7B7B;
+  color: #5a5a5a;
   padding-top: 20px;
+  font-size: 18px;
 }
 #intro .block img {
   /*padding-left: 40px;*/
@@ -185,10 +186,10 @@ font header .navbar-default .navbar-nav li a:hover {
     font-weight: 700;
 }
 #service .service-item p {
-  color: #888;
+  color: #5a5a5a;
   padding-top: 10px;
   margin: 0;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.8;
 }
 /*--
@@ -283,13 +284,14 @@ font header .navbar-default .navbar-nav li a:hover {
 #feature h2 {
 
  font-size: 38px;
-    font-weight: 900;
-    margin-bottom: 30px;
-    color: #FB4F14;
+ font-weight: 900;
+ margin-bottom: 30px;
+ color: #FB4F14;
 
 }
 #feature p {
-  color: #8d8f92;
+  color: #5a5a5a;
+  font-size: 18px;
   margin-bottom: 20px;
 }
 #feature .btn-view-works {
@@ -1725,6 +1727,12 @@ ul#navbar1.navbar li.btn_nav a:focus {
 
 }
 
+.submenu {
+  display: none;
+  background-color: #002244;
+  z-index: 1;
+}
+
 ul#navbar1.navbar #home a:hover {
 
   background-color: #002244;
@@ -1850,6 +1858,7 @@ ul#navbar1.navbar #btn4 {
 }
 ul#navbar1.navbar #btn4 a:hover {
   background-color: #002244;
+  display: block;
 }
 ul#navbar1.navbar #btn4 a:hover .arrow {
   opacity: 1;
@@ -2030,9 +2039,1345 @@ i {
   }
 }
 
+/* Blog Layout 8 : 1st Full Horizontal */
+
+.blog-layout.layout-8 .post {
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+.blog-layout.layout-8 .col:last-child .post {
+    margin: 0;
+}
+.blog-layout.layout-8 .post .post-thumb {
+    height: 169px;
+    width: 41%;
+    float: left;
+    margin: 0;
+}
+.blog-layout.layout-8 .post .post-content {
+    width: 55%;
+    display: block;
+    overflow: hidden;
+    padding-left: 30px;
+}
+.blog-layout.layout-8 .post .post-entry {
+    margin-bottom: 0;
+}
+
+.blog-layout {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 60px;
+    clear: both;
+}
+.blog-layout .blog-title {
+    display: block;
+    margin-bottom: 30px;
+    padding: 0 0 10px;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 2px solid #eee;
+    clear: both;
+}
+.blog-layout .blog-title h2 {
+    margin: 0;
+    font-size: 25px;
+    letter-spacing: -.04em;
+    text-transform: uppercase;
+    letter-spacing: normal;
+    background-color: #fff;
+    padding-right: 20px;
+    display: inline-block;
+    position: relative;
+/*    z-index: 2;*/
+    line-height: 1;
+}
+.blog-layout .post {
+    display: block;
+    position: relative;
+    margin-bottom: 30px;
+}
+.blog-layout .post .post-thumb {
+    background-color: #111;
+    display: block;
+    position: relative;
+    /*z-index: 1;*/
+    margin-bottom: 20px;
+    text-align: center;
+}
+.blog-layout .post .post-meta {
+    overflow: hidden;
+    padding-top: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+.blog-layout .post .post-meta li {
+    font-size: 12px;
+    font-weight: 400;
+    color: #aaa;
+}
+.blog-layout .post .post-meta:before {
+    content: " ";
+    position: absolute;
+    /*z-index: 1;*/
+    top: 0;
+    left: 0;
+    display: block;
+    width: 40px;
+    height: 1px;
+    background-color: #dfdfdf;
+}
+
+/* 1st Post Has Captions */
+
+.blog-layout.has-caption .post.first .post-thumb {
+    margin: 0;
+}
+.blog-layout.has-caption .post.first .post-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    background: #111;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+    padding: 20px;
+}
+.blog-layout.has-caption .post.first .post-title a {
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+.blog-layout.has-caption .post.first .post-meta li {
+    color: #ddd;
+}
+.blog-layout.has-caption .post.first .post-meta:before {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* 1st Post Has Captions Style 2 */
+
+.blog-layout.has-caption2 .post.first {
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+.blog-layout.has-caption2 .post.first .post-thumb {
+    margin: 0;
+}
+.blog-layout.has-caption2 .post.first .post-content {
+    background: #fff;
+    padding: 30px 30px 0;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: -60px;
+    position: relative;
+    z-index: 1;
+}
+.blog-layout.has-caption2 .post:not(.first) .post-content {
+    background: #fff;
+    padding: 20px 20px 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -60px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Posts with Tiny Thumbs */
+
+.blog-layout.tiny-thumb .post:not(.first) {
+    display: block;
+    overflow: hidden;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+.blog-layout.tiny-thumb .post:not(.first):last-child {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+.blog-layout.tiny-thumb .post:not(.first) .post-thumb {
+    height: 79px;
+    width: 140px;
+    float: left;
+    margin: 0;
+}
+.blog-layout.tiny-thumb .post:not(.first) .post-content {
+    overflow: hidden;
+    margin-left: 160px;
+}
+.blog-layout.tiny-thumb .post:not(.first) .post-title {
+    max-height: 38px;
+    overflow: hidden;
+}
+.blog-layout.tiny-thumb .post:not(.first) .post-meta:before {
+    width: 20px;
+}
+.blog-layout.tiny-thumb .post:not(.first) .post-meta li {
+    font-size: 11px;
+}
+
+.blog-layout.layout-8 .post .post-thumb {
+  height: 190px;
+}
+
+img.lazy {
+    width: 100%;
+}
+
+/* Post Header */
+
+.post-header {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.post-header .post-category {
+    display: block;
+    margin-bottom: 15px;
+}
+.post-header .post-category a {
+    padding: 0 10px;
+    float: left;
+    margin-right: 5px;
+}
+.post-header .post-title {
+    font-size: 35pt;
+    line-height: 35pt;
+    letter-spacing: -0.04em;
+}
+.post-header .post-meta {
+    border-top: 1px dotted #eee;
+    padding-top: 10px;
+}
+.post-header .post-meta li {
+    line-height: 24px;
+}
+.post-header .post-meta li.right {
+    float: right;
+    margin-right: 0;
+    margin-left: 20px;
+}
+.post-header .post-meta li .avatar {
+    display: block;
+    width: 24px;
+    height: 24px;
+    float: left;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+/* Post Body */
+
+.post-body {
+    display: block;
+    position: relative;
+    font-size: 15px;
+    clear: both;
+    border-bottom: 1px dotted #eee;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+.post-body h1 {
+    font-size: 35pt;
+    line-height: 35pt;
+    letter-spacing: -0.04em;
+    margin: 20px 0;
+}
+.post-body h2 {
+    font-size: 30pt;
+    line-height: 30pt;
+    letter-spacing: -0.04em;
+    margin: 20px 0;
+}
+.post-body h3 {
+    font-size: 25pt;
+    line-height: 25pt;
+    letter-spacing: -0.04em;
+    margin: 20px 0;
+}
+.post-body h4 {
+    font-size: 20pt;
+    line-height: 20pt;
+    letter-spacing: -0.04em;
+    margin: 20px 0;
+}
+.post-body h5 {
+    font-size: 16pt;
+    line-height: 16pt;
+    letter-spacing: -0.04em;
+    margin: 20px 0;
+}
+.post-body ul, .post-body ul li {
+    list-style-type: circle;
+    margin-left: 8px;
+    padding-left: 8px;
+}
+.post-body ol, .post-body ol li {
+    margin-left: 8px;
+    padding-left: 8px;
+    list-style-type: decimal;
+}
+
+/* Post Footer */
+
+.post-footer {
+    display: block;
+    position: relative;
+    clear: both;
+    margin-bottom: 60px;
+}
+.post-footer .title {
+    display: block;
+    margin-bottom: 20px;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    clear: both;
+}
+.post-footer .title:before {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 100%;
+    background: #f0f0f0;
+    position: absolute;
+    top: 10px;
+    z-index: 1;
+    border-radius: 5px;
+}
+.post-footer .title h2 {
+    margin: 0;
+    font-size: 17px;
+    letter-spacing: -.02em;
+    text-transform: uppercase;
+    background-color: #fff;
+    padding-right: 20px;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    line-height: 1;
+}
+
+/* Post Tags */
+
+.post-tags {
+    display: block;
+    overflow: hidden;
+    clear: both;
+    border-bottom: 1px dotted #eee;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+.post-tags a, .post-tags span {
+    display: block;
+    float: left;
+    background: #eee;
+    color: #aaa;
+    padding: 0 10px;
+    margin-right: 5px;
+    text-transform: uppercase;
+    height: 20px;
+    font-size: 11px;
+    line-height: 22px;
+}
+.post-tags a:hover, .post-tags span {
+    background: #111;
+    color: #fff !important;
+}
+
+/* Post Share */
+
+.post-share {
+    display: block;
+    overflow: hidden;
+    clear: both;
+    margin-bottom: 30px;
+}
+.post-footer .post-share {
+    margin-bottom: 60px;
+}
+.post-share ul li {
+    float: left;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    background: #ccc;
+    text-align: center;
+    margin-right: 5px;
+    border-radius: 3px;
+}
+.post-share ul li a {
+    display: block;
+    color: #fff;
+}
+.post-share ul li i {
+    font-size: 20px;
+    position: relative;
+    top: 3px;
+}
+.post-share ul li.facebook, .post-share ul li.twitter {
+    width: auto;
+}
+.post-share ul li.facebook a, .post-share ul li.twitter a {
+    padding: 0 52px;
+}
+.post-share ul li.facebook i, .post-share ul li.twitter i {
+    margin-right: 10px;
+}
+.post-share ul li.facebook {
+    background: #3F51B5;
+}
+.post-share ul li.twitter {
+    background: #03A9F4;
+}
+.post-share ul li.google-plus {
+    background: #F44336;
+}
+.post-share ul li.linkedin {
+    background: #1a7baa;
+}
+.post-share ul li.whatsapp {
+    background: #4CAF50;
+}
+.post-share .counter {
+    display: block;
+    float: left;
+    margin-right: 10px;
+    text-transform: uppercase;
+    text-align: right;
+    color: #aaa;
+    font-size: 11px;
+}
+.post-share .counter strong {
+    display: block;
+    font-size: 28px;
+    line-height: 1;
+    color: #121212;
+}
+.post-share ul li:hover {
+    -webkit-box-shadow: inset 0 -42px 0 rgba(0, 0, 0, .1);
+    box-shadow: inset 0 -42px 0 rgba(0, 0, 0, .1);
+}
+
+/* Post Picked */
+
+.post-picked {
+    display: block;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 487px;
+    background: #fff;
+    z-index: 99;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    visibility: hidden;
+    opacity: 0;
+}
+.post-picked.open {
+    visibility: visible;
+    opacity: 1;
+}
+.post-picked .picked-title {
+    background-color: #ccc;
+    padding: 10px 20px;
+    display: block;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+.post-picked .picked-title h2 {
+    float: left;
+    font-size: 15px;
+    color: #fff;
+    letter-spacing: -.02em;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1;
+}
+.post-picked .picked-title .close {
+    display: block;
+    float: right;
+    line-height: 1;
+    color: #fff;
+    cursor: pointer;
+}
+.post-picked .picked-title .close:hover {
+    opacity: .8;
+}
+.post-picked .picked-inner {
+    padding: 20px;
+}
+.post-picked .post {
+    margin: 0;
+}
+.post-picked .post-thumb {
+    width: 150px;
+    float: left;
+    margin-right: 15px;
+}
+.post-picked .post-meta {
+    margin-top: 10px;
+    color: #aaa;
+}
+
+/* Post Author */
+
+.post-author {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 60px;
+    border: 1px solid #eee;
+    padding: 30px;
+}
+body:not(.single) .post-author {
+    margin-bottom: 30px;
+}
+.post-author .author-avatar {
+    float: left;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.post-author .author-content {
+    margin-left: 130px;
+    overflow: hidden;
+}
+.post-author .author-content .name {
+    display: block;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #eee;
+}
+.post-author .author-content .name span {
+    display: block;
+    font-size: 12px;
+    color: #aaa;
+}
+.post-author .author-content .name .author {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.post-author .author-social li {
+    float: left;
+    margin-right: 10px;
+    line-height: 1;
+}
+
+/* Post Navigation */
+
+.post-navigation {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 60px;
+    border-top: 1px solid #eee;
+}
+.post-navigation ul li {
+    float: left;
+    width: 50%;
+    padding-top: 30px;
+}
+.post-navigation ul li.prev {
+    text-align: left;
+    padding-right: 30px;
+    border-right: 1px solid #eee;
+}
+.post-navigation ul li.next {
+    text-align: right;
+    padding-left: 30px;
+}
+.post-navigation ul li span {
+    display: block;
+    font-size: 12px;
+    color: #aaa;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.post-navigation ul li a {
+    font-size: 20px;
+    line-height: 1;
+}
+
+/* Post Recommended */
+
+.post-recommended {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+.post-recommended .post {
+    display: block;
+    overflow: hidden;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+.post-recommended .col:nth-child(n+3) .post {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+.post-recommended .post .post-thumb {
+    height: 90px;
+    width: 140px;
+    float: left;
+    margin: 0;
+}
+.post-recommended .post .post-content {
+    overflow: hidden;
+    margin-left: 160px;
+}
+.post-recommended .post .post-title {
+    max-height: 38px;
+    overflow: hidden;
+}
+.post-recommended .post .post-meta {
+    margin-top: 10px;
+    color: #aaa;
+}
+.post-recommended .post .post-meta li {
+    font-size: 11px;
+}
+
+/* Post Related */
+
+.post-related {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+.post-related .post {
+    display: block;
+    overflow: hidden;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.post-related .post .post-thumb {
+    height: 145px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.post-related .post .post-content {
+    overflow: hidden;
+}
+
+/*.post-related .post .post-title {
+    max-height: 38px;
+    overflow: hidden;
+}*/
+
+.post-related .post .post-meta {
+    margin-top: 10px;
+    color: #aaa;
+}
+.post-related .post .post-meta li {
+    font-size: 11px;
+}
+
+/* Post Ad */
+
+.post-ad {
+    display: block;
+    clear: both;
+    margin: 20px 0;
+    text-align: center;
+}
+.post-ad a {
+    margin: 0;
+    display: inline-block;
+}
+.post-ad span {
+    display: block;
+    font-size: 13px;
+    color: #aaa;
+    letter-spacing: normal;
+}
+
+/* Th Captions */
+
+.th-caption {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+.th-caption.left-caption {
+    float: left;
+    margin-right: 20px;
+}
+.th-caption.right-caption {
+    float: right;
+    margin-left: 20px;
+}
+.th-caption.center-caption {
+    display: flex;
+    margin: 20px 0;
+}
+.th-caption.center-caption a {
+    margin: auto;
+}
+.th-caption .caption {
+    display: block;
+    width: 100%;
+    margin: 15px auto;
+    text-align: center;
+    color: #aaa;
+    font-style: italic;
+}
+
+/* Pre & Code */
+
+pre, code {
+    background: #ffe9f0;
+    color: #E91E63;
+    padding: 20px;
+    border-radius: 2px;
+}
+code {
+    display: inline-block;
+    padding: 0 5px;
+    font-size: 13px;
+}
+
+/* Post Layouts */
+
+#main-area.has-left-sidebar #main {
+    float: right;
+}
+#main-area.has-left-sidebar #sidebar {
+    float: left;
+}
+#main-area.fullwidth {
+    border: 0 !important;
+}
+#main-area.fullwidth #sidebar {
+    display: none;
+}
+#main-area.fullwidth #main {
+    width: 100%;
+}
+.post .post-thumb {
+    overflow: hidden;
+    display: block;
+}
 
 
 
 
+/*! normalize.css v2.1.0 | MIT License | git.io/normalize */
 
+
+/* ==========================================================================
+  HTML5 display definitions
+  ========================================================================== */
+
+
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+
+audio, canvas, video {
+  display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+  Base
+  ========================================================================== */
+
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *   user zoom.
+ */
+
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+  Links
+  ========================================================================== */
+
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:focus, a:active, a:hover {
+  outline: none;
+}
+
+/* ==========================================================================
+  Typography
+  ========================================================================== */
+
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+
+b, strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+
+pre {
+  white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+  Embedded content
+  ========================================================================== */
+
+
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+  Figures
+  ========================================================================== */
+
+
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+  Forms
+  ========================================================================== */
+
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+
+button, input, select, textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button, input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+
+button, select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *   and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *   `input` and others.
+ */
+
+button, html input[type="button"],
+/* 1 */
+
+input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled], html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ */
+
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *   (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+  Tables
+  ========================================================================== */
+
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*
+    NAME : Our CSS Framework
+    AUTHOR NAME : Infinyteam
+    AUTHOR WEBSITE : www.infinyteam.com
+    OUR PORTFOLIO : http://themeforest.net/user/infinyteam/portfolio?ref=infinyteam
+*/
+
+/* IFRAMES */
+
+iframe {
+    padding: 0;
+    margin: 0;
+    border: none;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/* BORDER BOX */
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* TEXT */
+
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+
+/* LAYOUT FLOATS */
+
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+
+/* TABLE */
+
+.table:after, .table:before {
+    content: " ";
+    display: table;
+}
+.table-cell {
+    display: table-cell;
+    width: 10%;
+    vertical-align: middle;
+}
+.display-flex {
+    display: flex;
+}
+.display-flex-middle {
+    display: block;
+    vertical-align: middle;
+    margin: 0 auto;
+}
+.inline-block {
+    display: inline-block;
+}
+
+/* CLEAR */
+
+.clear {
+    clear: both
+}
+
+/* UTILITIES */
+
+.no-padding {
+    padding: 0;
+}
+.no-top-padding {
+    padding-top: 0;
+}
+.no-bottom-padding {
+    padding-bottom: 0;
+}
+.top-padding {
+    padding-top: 30px;
+}
+.bottom-padding {
+    padding-bottom: 30px;
+}
+.no-margin {
+    margin: 0;
+}
+.top-margin {
+    margin-top: 30px;
+}
+.bottom-margin {
+    margin-bottom: 30px;
+}
+
+/* LISTS */
+
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+/* LARGE GRID */
+
+.row-large {
+    margin-left: -20px;
+    margin-right: -20px;
+}
+.row-large [class*=" col-"], .row-large [class^=col-] {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* MEDIUM GRID */
+
+.row-medium {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.row-medium [class*=" col-"], .row-medium [class^=col-] {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* SMALL GRID */
+
+.row-small {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+.row-small [class*=" col-"], .row-small [class^=col-] {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* EXTRA SMALL GRID */
+
+.row-tiny {
+    margin-left: -1px;
+    margin-right: -1px;
+}
+.row-tiny [class*=" col-"], .row-tiny [class^=col-] {
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+/* NO GRID SPERATOR */
+
+.row-no {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.row-no [class*=" col-"], .row-no [class^=col-] {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/* NO GRID SPERATOR */
+
+.row-gallery {
+    margin-left: -1px;
+    margin-right: -1px;
+}
+.row-gallery [class*=" col-"], .row-gallery [class^=col-] {
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+.container-fluid .row {
+    margin-left: -1px;
+    margin-right: -1px;
+}
+.container-fluid .row [class*=" col-"], .container-fluid .row [class^=col-] {
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+/* IMAGES */
+
+.post-thumb img {
+    max-width: 100%;
+    display: block;
+}
+
+.center-caption img {
+    max-width: 100%;
+    display: block;
+}
+
+#top {
+   width: 470px;
+   height: 268px;
+}
+
+#top img {
+    width: 100%;
+}
+
+img.lazy {
+   /* opacity: 1;*/
+    transition: opacity .3s ease-in;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px
+}
+::-webkit-scrollbar-track {
+    background-color: #fafafa
+}
+::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+    border-color: #aaa;
+}
 

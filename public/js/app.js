@@ -23,4 +23,12 @@ app.config(function($locationProvider, $stateProvider, $urlRouterProvider) {
       url: '/thanks',
       templateUrl: 'templates/thanks.html'
     })
+    .state('blog', {
+      url: '/blog',
+      templateUrl: 'templates/articles/blog.html'
+    })
+    .state('article', {
+      url: '/article',
+      templateUrl: 'templates/articles/article.html'
+    })
 });
