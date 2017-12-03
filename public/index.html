@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>New Old Road</title>
+  <title>New Old Road Tech - App &amp; Web Development Solutions</title>
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
+  <link rel="shortcut icon" href="http://www.newoldroad.com/img/favicon.ico">
   <!-- CSS -->
   <link rel="stylesheet" href="css/owl.carousel.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -19,6 +19,8 @@
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,500,800">
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
   <!-- for Google Map -->
@@ -42,11 +44,14 @@
  -->
   <nav-directive></nav-directive>
 
+
+
   <div ui-view></div>
   <footer-directive></footer-directive>
   <!-- ################## JS #################### -->
 
   <!-- node_modules -->
+  <script src="https://embed.small.chat/T74Q43XM5G73RS1A1K.js" async></script>
   <script src="/angular/angular.js"></script>
   <script src="/@uirouter/angularjs/release/angular-ui-router.js"></script>
   <script src="jquery/dist/jquery.min.js"></script>
@@ -62,9 +67,10 @@
   <script src="js/jquery.counterup.js"></script>
   <script src="js/directives/navDirective.js"></script>
   <script src="js/directives/footerDirective.js"></script>
+  <script src="js/directives/asideDirective.js"></script>
   <!-- for Google Map -->
-  <script src="https://maps.googleapis.com/maps/api/js"></script>
-  <script src="js/google-map-init.js"></script>
+  <!-- <script src="https://maps.googleapis.com/maps/api/js"></script>
+  <script src="js/google-map-init.js"></script> -->
 
   <!-- external JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
@@ -72,6 +78,15 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.1.0/velocity.ui.js"></script>
   <script src="https://cdn.rawgit.com/download/glyphicons/0.1.0/glyphicons.js"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+
+  <script>
+    $(".hamburger_menu_mobile").click(function(){
+      alert("hi");
+      $("#btn1").toggle();
+      $("#btn2").toggle();
+      $("#btn3").toggle();
+    });
+  </script>
+
 </body>
 </html>
-

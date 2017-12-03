@@ -1,0 +1,234 @@
+<!-- Twitter follow us -->
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+
+
+<aside id="sidebar" class="sidebar col-md-4" ng-controller="sabbathCtrl">
+  <div class="widget LinkList">
+    <div class="widget-title">
+      <h2>Follow Us</h2>
+    </div>
+    <div class="widget-content social-counter">
+      <a href="https://www.facebook.com/RavDror/" class="facebook" target="_blank">
+        <i class="fa fa-facebook"></i>
+        <span class="count">12.7k</span>
+        <span class="label">Followers/span>
+      </a>
+      <a href="https://www.youtube.com/user/EmunahChannel" class="youtube" target="_blank">
+        <i class="fa fa-youtube"></i>
+        <span class="count">5.8k</span>
+        <span class="label">Subscribers</span>
+      </a>
+      <a href="https://twitter.com/ravdror?ref_src=twsrc%5Etfw" target="_blank" class="twitter">
+        <i class="fa fa-twitter"></i>
+        <span class="count">5.3k</span>
+        <span class="label">Followers</span>
+      </a>
+      <a href="https://plus.google.com/u/0/109950438712204531834" class="google" style="background-color:indigo" target="_blank">
+        <i class="fa fa-google"></i>
+        <span class="count">1.3k</span>
+        <span class="label">Followers</span>
+      </a>
+      <a href="https://www.instagram.com/ravdror/" class="instagram" style="background-color:violet" target="_blank">
+        <i class="fa fa-instagram"></i>
+        <span class="count">4.4k</span>
+        <span class="label">Followers</span>
+      </a>
+      <a href="https://soundcloud.com/ravdror" class="soundcloud">
+        <i class="fa fa-soundcloud" target="_blank"></i>
+        <span class="count">800</span>
+        <span class="label">Followers</span>
+      </a>
+    </div>
+  </div><!-- Widget : Social Counter -->
+  <classes-directive></classes-directive>
+  <div class="widget FollowByEmail">
+    <div class="widget-title">
+      <h2>Newsletter</h2>
+    </div>
+    <div class="widget-content">
+      <div class="follow-by-email-inner">
+        <form action="//herokuapp.us15.list-manage.com/subscribe/post?u=f95258be440735b1039166749&amp;id=70a28598ae" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <table>
+            <tbody>
+            <tr>
+              <td>
+                <input  type="email" value="" name="EMAIL" class="follow-by-email-address" id="mce-EMAIL" placeholder="email address" required>
+              </td>
+              <td>
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f95258be440735b1039166749_70a28598ae" tabindex="-1" value=""></div>
+                <input class="follow-by-email-submit" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" >
+              </td>
+            </tr>
+            </tbody>
+          </table>
+          <!-- <input name="uri" type="hidden" value="TheStyle-LifeStyleBloggerTemplate"> -->
+          <input name="loc" type="hidden" value="en_US">
+        </form>
+      </div>
+    </div>
+  </div><!-- Widget : Follow By Email -->
+  <div class="widget LinkList">
+    <div class="widget-title">
+      <h2>Stay Connected</h2>
+    </div>
+    <div class="widget-content social-icons">
+      <a class="facebook" href="https://www.facebook.com/RavDror/" target="_blank"><i class="fa fa-facebook"></i></a>
+      <a class="twitter" href="https://twitter.com/ravdror" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a class="google" href="https://plus.google.com/u/0/109950438712204531834" target="_blank"><i class="fa fa-google"></i></a>
+      <a class="instagram" href="https://www.instagram.com/ravdror/" target="_blank"><i class="fa fa-instagram"></i></a>
+      <a class="youtube" href="https://www.youtube.com/user/EmunahChannel" target="_blank"><i class="fa fa-youtube"></i></a>
+      <a class="soundcloud" href="https://soundcloud.com/ravdror" target="_blank"><i class="fa fa-soundcloud"></i></a>
+    </div>
+  </div><!-- Widget : Social Icons -->
+  <div class="widget HTML">
+    <div class="widget-title">
+      <h2>Recent Posts</h2>
+    </div>
+    <div class="widget-content">
+      <ul class="recent-posts">
+        <li class="post">
+          <div class="post-thumb">
+            <a ui-sref="post-single({videoParam: topThree[0], id: topThree[0].id})">
+              <img class="lazy" src="images/4.jpg" alt="Post Title Placeholder"  />
+            </a>
+          </div><!-- Post Image -->
+          <div class="post-content">
+            <h6 class="post-title">
+              <a ui-sref="post-single({videoParam: topThree[0], id: topThree[0].id})">{{topThree[0].snippet.title}}</a>
+            </h6><!-- Post Title -->
+            <ul class="post-meta">
+              <li><i class="fa fa-clock-o"></i> {{topThree[0].snippet.publishedAt}}</li>
+            </ul><!-- Post Meta -->
+          </div><!-- Post Content -->
+        </li><!-- Post -->
+        <li class="post">
+          <div class="post-thumb">
+            <a ui-sref="post-single">
+              <img class="lazy" src="images/5.jpg" data-src="images/5.jpg" alt="Post Title Placeholder" />
+            </a>
+          </div><!-- Post Image -->
+          <div class="post-content">
+            <h6 class="post-title">
+              <a ui-sref="post-single({videoParam: topThree[1], id: topThree[1].id})">{{topThree[1].snippet.title}}</a>
+            </h6><!-- Post Title -->
+            <ul class="post-meta">
+              <li><i class="fa fa-clock-o"></i> {{topThree[1].snippet.publishedAt}}</li>
+            </ul><!-- Post Meta -->
+          </div><!-- Post Content -->
+        </li><!-- Post -->
+        <li class="post">
+          <div class="post-thumb">
+            <a ui-sref="post-single({videoParam: topThree[2], id: topThree[2].id})">
+              <img class="lazy" src="images/12.jpg" data-src="images/12.jpg" alt="Post Title Placeholder" />
+            </a>
+          </div><!-- Post Image -->
+          <div class="post-content">
+            <h6 class="post-title">
+              <a ui-sref="post-single({videoParam: topThree[2], id: topThree[2].id})">{{topThree[2].snippet.title}}</a>
+            </h6><!-- Post Title -->
+            <ul class="post-meta">
+              <li><i class="fa fa-clock-o"></i> {{topThree[2].snippet.publishedAt}}</li>
+            </ul><!-- Post Meta -->
+          </div><!-- Post Content -->
+        </li><!-- Post -->
+      </ul>
+    </div>
+  </div><!-- Widget : Recent Posts -->
+  <!-- Widget : Categories -->
+  <div class="widget HTML">
+    <div class="widget-title">
+      <h2>@instagram</h2>
+    </div>
+    <div class="widget-content">
+      <div class="instagram-feeds row-gallery">
+        <script src="https://snapwidget.com/js/snapwidget.js"></script>
+        <iframe src="https://snapwidget.com/embed/426252" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
+      </div>
+    </div>
+  </div><!-- Widget : Instagram -->
+  <div class="widget HTML">
+    <div class="widget-title">
+      <h2>@Twitter Feed</h2>
+    </div>
+    <div class="widget-content">
+      <a class="twitter-timeline" href="https://twitter.com/RavDror" data-tweet-limit="9">by RavDror</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  </div><!-- Widget : Instagram -->
+  <!-- Widget : Advertisment -->
+<!--  <div class="widget BlogArchive">
+    <div class="widget-title">
+      <h2>Blog Archive</h2>
+    </div>
+    <div class="widget-content">
+      <div id="ArchiveList">
+        <select>
+          <option value="">Blog Archive</option>
+          <option value="page-archive">January, 2017 (10)</option>
+          <option value="page-archive">December, 2016 (8)</option>
+          <option value="page-archive">September, 2016 (5)</option>
+          <option value="page-archive">October, 2016 (24)</option>
+        </select>
+      </div>
+    </div>
+  </div> --><!-- Blog Archive -->
+  <!-- <div class="widget Label">
+    <div class="widget-title">
+      <h2>Tags Cloud</h2>
+    </div>
+    <div class="widget-content cloud-label-widget-content">
+      <ul>
+        <li>
+          <a dir="ltr" ui-sref="page-category"> Halacha</a>
+          <span dir="ltr">4</span>
+        </li>
+        <li>
+          <a dir="ltr" ui-sref="page-category">Girls</a>
+          <span dir="ltr">8</span>
+        </li>
+        <li>
+          <a dir="ltr" ui-sref="page-category">Life Style</a>
+          <span dir="ltr">3</span>
+        </li>
+        <li>
+          <a dir="ltr" ui-sref="page-category">Music</a>
+          <span dir="ltr">2</span>
+        </li>
+        <li>
+          <a dir="ltr" ui-sref="page-category">Blogging</a>
+          <span dir="ltr">9</span>
+        </li>
+        <li>
+          <a dir="ltr" ui-sref="page-category">Music</a>
+          <span dir="ltr">4</span>
+        </li>
+        <li>
+          <a dir="ltr" ui-sref="page-category">Personal Growth</a>
+          <span dir="ltr">8</span>
+        </li>
+        <li>
+          <a dir="ltr" ui-sref="page-category">Prayers</a>
+          <span dir="ltr">3</span>
+        </li>
+        <li>
+          <a dir="ltr" ui-sref="page-category">News</a>
+          <span dir="ltr">2</span>
+        </li>
+      </ul>
+    </div>
+  </div> --><!-- Facebook Page -->
+</aside><!-- Sidebar -->
