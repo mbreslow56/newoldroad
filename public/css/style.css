@@ -96,7 +96,6 @@ font header .navbar-default .navbar-nav li a:hover {
 	Slider Start
 --*/
 #slider {
-  background: url("../img/santa-monica.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: 10% 0%;
@@ -111,9 +110,9 @@ font header .navbar-default .navbar-nav li a:hover {
   bottom: 0;
   right: 0;
   width: 100%;
-  height: 100%;
-  background: linear-gradient(to left, #FC4C02, #0C2340);
-  opacity: 0.8;
+  height: 84%;
+  /*background: linear-gradient(to left, #FC4C02, #0C2340);
+  opacity: 0.8;*/
 }
 #slider .block {
   color: #E3E3E4;
@@ -1302,7 +1301,7 @@ h1 {
   font-weight: bold;
   font-size: 52px;
   text-transform: uppercase;
-  color: #fff;
+  color: white;
 }
 .title:before {
   content: '';
@@ -1545,15 +1544,15 @@ a.normal_a {
 }
 
 a.quote_btn {
-  color: rgba(30, 22, 54, 0.6);
-  box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;
+  color: white;
+  box-shadow: white 0 0px 0px 2px inset;
 }
 
 a.quote_btn:hover {
   color: white;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(255,111,33,0.43);
 -moz-box-shadow: 10px 10px 5px 0px rgba(255,111,33,0.43);
-box-shadow: 10px 10px 5px 0px rgba(255,111,33,0.43);
+box-shadow: 10px 10px 5px 0px #fb4f14;
 }
 
 /*
@@ -1581,6 +1580,12 @@ ul#navbar1.navbar {
 
 .home_img {
     height: 100%;
+    padding-bottom: 8px;
+    margin-right: 25px;
+}
+
+.banner_img {
+    width: 70%;
     padding-bottom: 8px;
     margin-right: 25px;
 }
@@ -1647,7 +1652,7 @@ ul#navbar1.navbar li.btn_nav {
   font-weight: semi-bold;
   text-align: center;
   background-color: #ffffff;
-  color: #002244;
+  color: #002245;
   position: relative;
   z-index: 1;
   font-family: 'Source Sans Pro', sans-serif;
@@ -1930,7 +1935,7 @@ a.getquotebtn {
     
     box-shadow: rgba(30, 22, 54, 0.4) 0px 0px 0px 2px;
     border-color: rgba(30, 22, 54, 0.6);
-    background-color: transparent;
+    background-color: #002244;
     margin-left: 50px;
     border: 2px solid white;
     color: white;
@@ -1942,7 +1947,9 @@ a.getquotebtn:hover {
 }
 
 
-
+#tagline {
+  color: white;
+}
 
 
 
