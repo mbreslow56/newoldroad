@@ -1,33 +1,43 @@
   
   <!-- Slider Start -->
-  <section id="slider" >
-    <div class="container">
-      <div class="row">
-        <div class="col-md-10 col-md-offset-2">
-          <div class="block">
-            <h2 class="animated fadeInUp">
-                <div class="title">
-                  <img class="banner_img" src="/img/inlinelogo_blue.png" />
-                  <div class="title-word" style="display: none;">New Old Road</div>
-                  <div class="title-word">App Dev &amp; Web Design</div>
-                  <div class="title-word">Studio</div>
-                  <div class="title-word" style="display: none;">App Develpment &amp; Web Design</div>
-                </div>
+  <div id="header-container">
+    <!-- <div id="particles-js"></div>   -->
+    <div ng-controller="particlesCtrl">
+        <div particles-drv ng-show="showParticles">
+          
+        </div>
+      </div>
+    <section id="slider" >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-md-offset-2">
+            <div class="block">
+              <h2 class="animated fadeInUp">
+                  <div class="title">
+                    <img class="banner_img" src="/img/inlinelogo_blue.png" />
+                    <div class="title-word" style="display: none;">New Old Road</div>
+                    <div class="title-word">App Dev &amp; Web Design</div>
+                    <div class="title-word">Studio</div>
+                    <div class="title-word" style="display: none;">App Develpment &amp; Web Design</div>
+                  </div>
               </h2>
-            <!--               <p class="animated fadeInUp">
-                Bridging the gap between cutting edge technology <br> and customized techniques.
-              </p> -->
-            <p class="animated fadeInUp" id="tagline">
-              Don't waste your time and money dealing with bad app and web developers. <br>
-              We are your technology insiders.
-            </p>
-          </div><!-- block -->
-          <br>
-          <a href="contact#message" class="getquotebtn" style="font-family: raleway ;letter-spacing: 1px;font-size: 19px;">GET A QUOTE</a>
-        </div><!-- "col-md-10 col-md-offset-2" -->
-      </div><!-- row -->
-    </div><!-- Container -->
-  </section>
+              <!--               <p class="animated fadeInUp">
+                  Bridging the gap between cutting edge technology <br> and customized techniques.
+                </p> -->
+              <p class="animated fadeInUp" id="tagline">
+                Don't waste time with unreliable developers. <br>
+                We are your technology insiders.
+              </p>
+            </div><!-- block -->
+            <br>
+            <a href="contact#message" class="getquotebtn">
+              GET A QUOTE
+            </a>
+          </div><!-- "col-md-10 col-md-offset-2" -->
+        </div><!-- row -->
+      </div><!-- Container -->
+    </section>
+  </div>
   <!-- Portfolio Start -->
   <section id="portfolio-work">
     <div class="container">
