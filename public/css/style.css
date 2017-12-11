@@ -11,6 +11,11 @@
 /*--
 	Common Css
 --*/
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -134,11 +139,10 @@ font header .navbar-default .navbar-nav li a:hover {
 --*/
 
 #slider {
-  /* background-size: cover; */
-  /* background-attachment: fixed; */
-  /* background-position: 10% 0%; */
-  padding-top: 15vh;
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #slider:before {
@@ -1860,7 +1864,7 @@ ul#navbar1.navbar {
 }
 
 .banner_img {
-  width: 70%;
+  width: 100%;
   padding-bottom: 8px;
   margin-right: 25px;
 }
@@ -2242,7 +2246,7 @@ a.getquotebtn {
   box-shadow: rgba(30, 22, 54, 0.4) 0px 0px 0px 2px;
   border-color: rgba(30, 22, 54, 0.6);
   background-color: #002244;
-  margin-left: 50px;
+  /* margin-left: 50px; */
   border: 2px solid white;
   color: white;
   pointer-events: auto;
@@ -2250,6 +2254,8 @@ a.getquotebtn {
   letter-spacing: 1px;
   font-size: 1.5rem;
   text-align: center;
+  width: 100%;
+  margin: auto;
 }
 
 a.getquotebtn:hover {

@@ -20,7 +20,7 @@
     "glyphicons": "^0.2.0",
     "jquery": "^2.1.0",
     "mongoose": "^4.11.1",
-    "particlesjs": "^2.1.0"
+    "particles.js": "^2.0.0"
   },
   "devDependencies": {},
   "repository": {
