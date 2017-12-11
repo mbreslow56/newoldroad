@@ -164,7 +164,15 @@ px      68    160    252    */
   /*---------------------------------------------
 					Index Start 
 -----------------------------------------------*/
-  .heading {
+html, body {
+  width: 100%;
+  overflow-x: hidden !important;
+  box-sizing: border-box;
+}
+
+
+
+.heading {
     padding-left: 0px;
   }
   h2 {
@@ -181,6 +189,7 @@ px      68    160    252    */
   #slider {
     padding-top: 90px;
     padding-bottom: 100px;
+    margin-left: 0;
   }
   #slider .block {
     padding-left: 0px;
@@ -209,9 +218,19 @@ px      68    160    252    */
 --*/
   #service {
     padding-top: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   #service .thumbnail {
     padding-bottom: 70px;
+  }
+
+  #about {
+    padding: 70px 15px;
+  }
+
+  #message {
+    padding: 0 30px !important;
   }
   /*--
 	call-to-action Start 
