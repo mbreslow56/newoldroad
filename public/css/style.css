@@ -344,7 +344,7 @@ font header .navbar-default .navbar-nav li a:hover {
     text-align: center;
   }
   .container {
-    margin: 15px;
+    /* margin: 15px; */
   }
   #feature-wrapper {
     background: none;
@@ -1906,12 +1906,16 @@ ul#navbar1.navbar {
   }
   .hamburger_menu_icon {
     width: 40px;
-    margin-left: 50%;
+    position: absolute;
+    left: 1em;
+    top: 0.5em;
   }
   .logo_menu_icon {
     width: 150px;
-    float: left;
-    /*margin-right: 50%;*/
+    position: absolute;
+    left: 50%;
+    top: 0.3em;
+    transform: translateX(-50%);
   }
   .arrow {
     display: none;
