@@ -197,10 +197,6 @@ font header .navbar-default .navbar-nav li a:hover {
   font-size: 18px;
 }
 
-#intro .block img {
-  /*padding-left: 40px;*/
-  /*width: 130%;*/
-}
 
 #intro .section-title {
   margin-bottom: 0px;
@@ -1090,7 +1086,7 @@ Contact form custom iphone */
   width: 500px;
   border: 1px #A0A0A0 solid;
   margin-left: 300px;
-  ƒ
+
 }
 
 .icon {
@@ -1920,7 +1916,7 @@ ul#navbar1.navbar {
 
 .mobile_logo_div {
   float: block;
-  display: inline-block;
+  /* display: inline-block; */
   margin-right: 10%;
 }
 
@@ -1942,9 +1938,6 @@ ul#navbar1.navbar li.btn_nav {
   opacity: 1.0;
 }
 
-ul#navbar1.navbar li.btn_nav.border-right {
-  /*  border-right: 1px solid #7f8c8d;*/
-}
 
 ul#navbar1.navbar li.btn_nav a {
   text-decoration: none;
@@ -3817,7 +3810,7 @@ iframe {
 
 .display-flex-middle {
   display: block;
-  vertical-align: middle;
+  /* vertical-align: middle; */
   margin: 0 auto;
 }
 
