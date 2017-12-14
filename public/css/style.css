@@ -11,6 +11,11 @@
 /*--
 	Common Css
 --*/
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -134,11 +139,10 @@ font header .navbar-default .navbar-nav li a:hover {
 --*/
 
 #slider {
-  /* background-size: cover; */
-  /* background-attachment: fixed; */
-  /* background-position: 10% 0%; */
-  padding-top: 15vh;
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #slider:before {
@@ -197,10 +201,6 @@ font header .navbar-default .navbar-nav li a:hover {
   font-size: 18px;
 }
 
-#intro .block img {
-  /*padding-left: 40px;*/
-  /*width: 130%;*/
-}
 
 #intro .section-title {
   margin-bottom: 0px;
@@ -344,7 +344,7 @@ font header .navbar-default .navbar-nav li a:hover {
     text-align: center;
   }
   .container {
-    margin: 15px;
+    /* margin: 15px; */
   }
   #feature-wrapper {
     background: none;
@@ -1090,7 +1090,7 @@ Contact form custom iphone */
   width: 500px;
   border: 1px #A0A0A0 solid;
   margin-left: 300px;
-  ƒ
+
 }
 
 .icon {
@@ -1864,7 +1864,7 @@ ul#navbar1.navbar {
 }
 
 .banner_img {
-  width: 70%;
+  width: 100%;
   padding-bottom: 8px;
   margin-right: 25px;
 }
@@ -1906,12 +1906,16 @@ ul#navbar1.navbar {
   }
   .hamburger_menu_icon {
     width: 40px;
-    margin-left: 50%;
+    position: absolute;
+    left: 1em;
+    top: 0.5em;
   }
   .logo_menu_icon {
     width: 150px;
-    float: left;
-    /*margin-right: 50%;*/
+    position: absolute;
+    left: 50%;
+    top: 0.3em;
+    transform: translateX(-50%);
   }
   .arrow {
     display: none;
@@ -1920,7 +1924,7 @@ ul#navbar1.navbar {
 
 .mobile_logo_div {
   float: block;
-  display: inline-block;
+  /* display: inline-block; */
   margin-right: 10%;
 }
 
@@ -1942,9 +1946,6 @@ ul#navbar1.navbar li.btn_nav {
   opacity: 1.0;
 }
 
-ul#navbar1.navbar li.btn_nav.border-right {
-  /*  border-right: 1px solid #7f8c8d;*/
-}
 
 ul#navbar1.navbar li.btn_nav a {
   text-decoration: none;
@@ -2249,7 +2250,7 @@ a.getquotebtn {
   box-shadow: rgba(30, 22, 54, 0.4) 0px 0px 0px 2px;
   border-color: rgba(30, 22, 54, 0.6);
   background-color: #002244;
-  margin-left: 50px;
+  /* margin-left: 50px; */
   border: 2px solid white;
   color: white;
   pointer-events: auto;
@@ -2257,6 +2258,8 @@ a.getquotebtn {
   letter-spacing: 1px;
   font-size: 1.5rem;
   text-align: center;
+  width: 100%;
+  margin: auto;
 }
 
 a.getquotebtn:hover {
@@ -3817,7 +3820,7 @@ iframe {
 
 .display-flex-middle {
   display: block;
-  vertical-align: middle;
+  /* vertical-align: middle; */
   margin: 0 auto;
 }
 
