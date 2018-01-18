@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html class="no-js" ng-app="norApp">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>New Old Road | {{# current_post }}{{ current_post.title }}{{/ current_post }}
+    {{^ current_post }}{{ cosmic.object.header.metadata.site_title }}{{/ current_post }}</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <link rel="shortcut icon" href="http://www.newoldroad.com/img/favicon.ico">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/particles.css">
+  <link rel="stylesheet" href="css/ionicons.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,500,800">
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <!-- for Google Map -->
+</head>
+<body>
+<ul id="navbar1" class="navbar">
+  <li id="home" class="btn_nav img border-right humburger_menu_mobile">
+    <a id="home_desktop" ui-sref="home">
+      <span class="img">
+        <img class="home_img" src="/img/inlinelogo.png" />
+        <!-- <svg class="home_img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+          <path style="text-indent:0;text-align:start;line-height:normal;text-transform:none;block-progression:tb;-inkscape-font-specification:Bitstream Vera Sans" d="M 16 2.59375 L 15.28125 3.28125 L 2.28125 16.28125 L 3.71875 17.71875 L 5 16.4375 L 5 27 L 5 28 L 6 28 L 13 28 L 14 28 L 14 27 L 14 18 L 18 18 L 18 27 L 18 28 L 19 28 L 26 28 L 27 28 L 27 27 L 27 16.4375 L 28.28125 17.71875 L 29.71875 16.28125 L 16.71875 3.28125 L 16 2.59375 z M 16 5.4375 L 25 14.4375 L 25 26 L 20 26 L 20 17 L 20 16 L 19 16 L 13 16 L 12 16 L 12 17 L 12 26 L 7 26 L 7 14.4375 L 16 5.4375 z" color="#000" overflow="visible" font-family="Bitstream Vera Sans"/>
+        </svg> -->
+      </span>
+      <div class="arrow"></div>
+    </a>
+    <a href="http://www.newoldroad.com/home" id="home_mobile">
+      <span class="img">
+        <div ng-click="toggleMenu()" class="mobile_hamburger_div">
+          <img class="hamburger_menu_icon" src="https://i.stack.imgur.com/Fw96Z.png" />
+        </div>
+        <div class="mobile_logo_div">
+          <img class="logo_menu_icon" src="/img/inlinelogo.png" />
+        </div>
+      </span>
+      <div class="arrow"></div>
+    </a>
+  </li>
+  <li ng-show="showMenu" ng-click="hideMenu()" id="btn1" class="btn_nav text border-right">
+    <a href="home#services">
+      <span class="title_nav">SERVICES</span>
+      <div class="arrow"></div>
+    </a>
+  </li>
+  <li ng-show="showMenu" ng-click="hideMenu()" id="btn2" class="btn_nav text border-right">
+    <a href="home#portfolio-work">
+      <span class="title_nav">CASE STUDIES</span>
+      <div class="arrow"></div>
+    </a>
+  </li>
+  <li ng-show="showMenu" ng-click="hideMenu()" id="btn3" class="btn_nav text border-right">
+    <a href="home#contact-form">
+      <span class="title_nav">CONTACT</span>
+      <div class="arrow"></div>
+    </a>
+  </li>
+<!--  <li ng-show="showMenu" ng-click="hideMenu()" id="btn3" class="btn_nav text border-right">
+    <a ui-sref="blog">
+      <span class="title_nav">BLOG</span>
+      <div class="arrow"></div>
+    </a>
+  </li> -->
+</ul>
+<br>
+<br>
+<br>
+<br><br>
