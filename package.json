@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "development": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
@@ -12,14 +13,18 @@
     "@uirouter/angularjs": "^1.0.5",
     "angular": "^1.6.5",
     "angular-ui-router": "^1.0.3",
+    "async": "^2.6.0",
     "body-parser": "^1.17.2",
     "bootstrap": "^3.3.7",
+    "cosmicjs": "^2.39.0",
     "express": "^4.15.3",
     "express-session": "^1.15.3",
     "font-awesome": "^4.7.0",
     "glyphicons": "^0.2.0",
+    "hogan-express": "^0.5.2",
     "jquery": "^2.1.0",
     "mongoose": "^4.11.1",
+    "nodemon": "^1.11.0",
     "particles.js": "^2.0.0"
   },
   "devDependencies": {},

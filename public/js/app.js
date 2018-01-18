@@ -25,10 +25,14 @@ app.config(function($locationProvider, $stateProvider, $urlRouterProvider) {
     })
     .state('blog', {
       url: '/blog',
-      templateUrl: 'templates/articles/blog.html'
+      templateUrl: '../views/blog.html'
     })
-    .state('article', {
-      url: '/article',
-      templateUrl: 'templates/articles/article.html'
-    })
+    // .state('post', {
+    //   url: '/blog/:slug',
+    //   templateUrl: '../views/.html'
+    // })
+    // .state('article', {
+    //   url: '/article',
+    //   templateUrl: 'templates/articles/post.html'
+    // })
 });
