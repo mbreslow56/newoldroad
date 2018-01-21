@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/particles.css">
   <link rel="stylesheet" href="css/ionicons.min.css">
   <link rel="stylesheet" href="css/animate.css">
@@ -28,8 +29,9 @@
 </head>
 
 <body>
-  <nav-directive></nav-directive>
+  
   <div ui-view></div>
+  <nav-directive></nav-directive>
   <footer-directive></footer-directive>
 
   <!-- node_modules -->
@@ -66,6 +68,20 @@
   <script src="https://cdn.rawgit.com/download/glyphicons/0.1.0/glyphicons.js"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
   <script>
+  
+$(document).ready(function(){
+    $(".menu-button a").click(function(){
+        $(".overlay").fadeToggle(200);
+       $(this).toggleClass('btn-open').toggleClass('btn-close');
+    });
+});
+$('.overlay').on('click', function(){
+    $(".overlay").fadeToggle(200);   
+    $(".menu-button a").toggleClass('btn-open').toggleClass('btn-close');
+    open = false;
+});
+
+
     $(".hamburger_menu_mobile").click(function(){
       alert("hi");
       $("#btn1").toggle();
