@@ -58,6 +58,7 @@ a:active,
 a:focus,
 a:active {
   text-decoration: none !important;
+  font-size: 1.5rem;
 }
 
 .section-title {
@@ -1875,7 +1876,7 @@ ul#navbar1.navbar {
     display: none;
   }
   ul#navbar1.navbar #home {
-    width: 350px;
+    width: 100%;
   }
 }
 

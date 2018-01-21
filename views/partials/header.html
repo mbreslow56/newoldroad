@@ -16,6 +16,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/particles.css">
   <link rel="stylesheet" href="css/ionicons.min.css">
   <link rel="stylesheet" href="css/animate.css">
@@ -29,62 +30,138 @@
 
   <!-- for Google Map -->
 </head>
-<body>
-<ul id="navbar1" class="navbar">
-  <li id="home" class="btn_nav img border-right humburger_menu_mobile">
-    <a id="home_desktop" ui-sref="home">
-      <span class="img">
-        <img class="home_img" src="/img/inlinelogo.png" />
-        <!-- <svg class="home_img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-          <path style="text-indent:0;text-align:start;line-height:normal;text-transform:none;block-progression:tb;-inkscape-font-specification:Bitstream Vera Sans" d="M 16 2.59375 L 15.28125 3.28125 L 2.28125 16.28125 L 3.71875 17.71875 L 5 16.4375 L 5 27 L 5 28 L 6 28 L 13 28 L 14 28 L 14 27 L 14 18 L 18 18 L 18 27 L 18 28 L 19 28 L 26 28 L 27 28 L 27 27 L 27 16.4375 L 28.28125 17.71875 L 29.71875 16.28125 L 16.71875 3.28125 L 16 2.59375 z M 16 5.4375 L 25 14.4375 L 25 26 L 20 26 L 20 17 L 20 16 L 19 16 L 13 16 L 12 16 L 12 17 L 12 26 L 7 26 L 7 14.4375 L 16 5.4375 z" color="#000" overflow="visible" font-family="Bitstream Vera Sans"/>
-        </svg> -->
-      </span>
-      <div class="arrow"></div>
-    </a>
-    <a href="http://www.newoldroad.com/home" id="home_mobile">
-      <span class="img">
-        <div ng-click="toggleMenu()" class="mobile_hamburger_div">
-          <img class="hamburger_menu_icon" src="https://i.stack.imgur.com/Fw96Z.png" />
+  <input type="checkbox" id="menu" name="menu" class="menu-checkbox">
+  <div class="menu">
+    <label class="menu-toggle" for="menu"><span>Toggle</span></label>
+    <ul>
+      <!-- <li>
+        <a href="http://newoldroad.com"><img class="hamburger_menu_icon" src="/img/inlinelogo.png" /></a>
+      </li>  -->
+      <li>
+        <a href="http://newoldroad.com/home#portfolio-work">Case Studies</a>
+      </li>
+      <li>
+        <a href="/home#services">Services</a>
+      </li>
+      <li>
+        <a href="/home#contact-form">Contact</a>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <!-- <li>      
+        <label for="menu-3">Contact</label>
+        <input type="checkbox" id="menu-3" name="menu-3" class="menu-checkbox">
+        <div class="menu">
+          <label class="menu-toggle" for="menu-3"><span>Toggle</span></label>
+          <ul>
+            <li>
+              <a href="#">Menu-3-1</a>
+            </li>
+            <li>
+              <label for="menu-3-2">Menu-3-2</label>
+              <input type="checkbox" id="menu-3-2" name="menu-3-2" class="menu-checkbox">
+              <div class="menu">
+                <label class="menu-toggle" for="menu-3-2"><span>Toggle</span></label>
+                <ul>
+                  <li>
+                    <a href="#">Menu-3-2-1</a>
+                  </li>
+                  <li>
+                    <a href="#">Menu-3-2-2</a>
+                  </li>
+                  <li>
+                    <label for="menu-3-2-3">Menu-3-2-3</label>
+                    <input type="checkbox" id="menu-3-2-3" name="menu-3-2-3" class="menu-checkbox">
+                    <div class="menu">
+                      <label class="menu-toggle" for="menu-3-2-3"><span>Toggle</span></label>
+                      <ul>
+                        <li>
+                          <a href="#">Menu-3-2-3-1</a>
+                        </li>
+                        <li>
+                          <a href="#">Menu-3-2-3-2</a>
+                        </li>
+                        <li>
+                          <a href="#">Menu-3-2-3-3</a>
+                        </li>
+                        <li>
+                          <a href="#">Menu-3-2-3-4</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#">Menu-3-2-4</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">Menu-3-3</a>
+            </li>
+            <li>
+              <a href="#">Menu-3-4</a>
+            </li>
+          </ul>
         </div>
-        <div class="mobile_logo_div">
-          <img class="logo_menu_icon" src="/img/inlinelogo.png" />
+      </li>
+      <li>
+        <label for="menu-4">Menu-4</label>
+        <input type="checkbox" id="menu-4" name="menu-4" class="menu-checkbox">
+        <div class="menu">
+          <label class="menu-toggle" for="menu-4"><span>Toggle</span></label>
+          <ul>
+            <li>
+              <a href="#">Menu-4-1</a>
+            </li>
+            <li>
+              <a href="#">Menu-4-2</a>
+            </li>
+            <li>
+              <a href="#">Menu-4-3</a>
+            </li>
+            <li>
+              <a href="#">Menu-4-4</a>
+            </li>
+          </ul>
         </div>
-      </span>
-      <div class="arrow"></div>
-    </a>
-  </li>
-  <li ng-show="showMenu" ng-click="hideMenu()" id="btn1" class="btn_nav text border-right">
-    <a href="http://www.newoldroad.com/home#services">
-      <span class="title_nav">SERVICES</span>
-      <div class="arrow"></div>
-    </a>
-  </li>
-  <li ng-show="showMenu" ng-click="hideMenu()" id="btn2" class="btn_nav text border-right">
-    <a href="http://www.newoldroad.com/home#portfolio-work">
-      <span class="title_nav">CASE STUDIES</span>
-      <div class="arrow"></div>
-    </a>
-  </li>
-  <li ng-show="showMenu" ng-click="hideMenu()" id="btn3" class="btn_nav text border-right">
-    <a href="http://www.newoldroad.com/home#contact-form">
-      <span class="title_nav">CONTACT</span>
-      <div class="arrow"></div>
-    </a>
-  </li>
-  <li ng-show="showMenu" ng-click="hideMenu()" id="btn3" class="btn_nav text border-right">
-    <a href="http://www.newoldroad.com/home#contact-form">
-      <span class="title_nav">BLOG</span>
-      <div class="arrow"></div>
-    </a>
-  </li>
-<!--  <li ng-show="showMenu" ng-click="hideMenu()" id="btn3" class="btn_nav text border-right">
-    <a ui-sref="blog">
-      <span class="title_nav">BLOG</span>
-      <div class="arrow"></div>
-    </a>
-  </li> -->
-</ul>
-<br>
-<br>
-<br>
-<br><br>
+      </li>      
+      <li>
+        <label for="menu-5">Menu-5</label>
+        <input type="checkbox" id="menu-5" name="menu-5" class="menu-checkbox">
+        <div class="menu">
+          <label class="menu-toggle" for="menu-5"><span>Toggle</span></label>
+          <ul>
+            <li>
+              <a href="#">Menu-5-1</a>
+            </li>
+            <li>
+              <a href="#">Menu-5-2</a>
+            </li>
+            <li>
+              <a href="#">Menu-5-3</a>
+            </li>
+            <li>
+              <a href="#">Menu-5-4</a>
+            </li>
+          </ul>
+        </div>
+      </li> -->
+      <li>
+        <a href="https://www.youtube.com/newoldroad" target="_blank"><i class="fa fa-youtube" style="color: white; font-size: 2.5rem;"></i></a>
+      </li>
+      <li>
+        <a class="normal_a" href="http://www.instagram.com/newoldroad" target="_blank"><i class="fa fa-instagram" style="color: white;font-size: 2.5rem;"></i></a>
+      </li>
+      <li>
+        <a class="normal_a" href="http://www.facebook.com/newoldroad" target="_blank"><i class="fa fa-facebook" style="color: white;font-size: 2.5rem;"></i></a>
+      </li>
+      <li>
+        <a class="normal_a" href="https://www.linkedin.com/company-beta/18133762/" target="_blank"><i class="fa fa-linkedin" style="color: white; font-size: 2.5rem;"></i></a>
+      </li>
+      <li>
+        <a class="normal_a" href="http://www.twitter.com/newoldroad" target="_blank"><i class="fa fa-twitter" style="color: white; font-size: 2.5rem;"></i></a>
+      </li>
+    </ul>
+  </div>
