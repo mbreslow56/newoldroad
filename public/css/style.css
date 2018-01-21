@@ -1876,7 +1876,7 @@ ul#navbar1.navbar {
     display: none;
   }
   ul#navbar1.navbar #home {
-    width: 100%;
+    width: 350px;
   }
 }
 
