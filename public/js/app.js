@@ -5,10 +5,10 @@ app.config(function($locationProvider, $stateProvider, $urlRouterProvider) {
     enabled: true,
     requireBase: false
   });
-  $urlRouterProvider.otherwise('/home');
+  $urlRouterProvider.otherwise('/');
   $stateProvider
     .state('home', {
-      url: '/home',
+      url: '/',
       templateUrl: 'templates/home.html'
     })
     .state('contact', {

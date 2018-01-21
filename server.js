@@ -58,8 +58,8 @@ app.get('/:slug', (req, res) => {
     callback => {
       Cosmic.getObject(config, { slug: req.params.slug, status: 'all' }, (err, response) => {
         res.locals.current_post = response.object
-        const friendly_date = helpers.friendlyDate(new Date(response.object.created))
-        res.locals.current_post.friendly_date = friendly_date.month + ' ' + friendly_date.date
+        // const friendly_date = helpers.friendlyDate(new Date(response.object.created))
+        // res.locals.current_post.friendly_date = friendly_date.month + ' ' + friendly_date.date
         if (!res.locals.current_post)
           res.status(404)
         res.render('post.html', { partials })
@@ -89,6 +89,10 @@ app.get('/author/:slug', (req, res) => {
     res.locals.cosmic = cosmic
     res.render('author.html', { partials })
   })
+});
+app.get('/home', (req, res) => {
+  
+    res.render('home.html', { partials })
 });
 app.all('[^.]+', function(req, res) {
   res.sendFile(__dirname + "/public/index.html");
